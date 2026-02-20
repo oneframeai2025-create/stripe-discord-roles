@@ -4,11 +4,25 @@ let discordClient: Client | null = null;
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
+    intents: [
+      GatewayIntentBits.Guilds,
+      GatewayIntentBits.GuildMembers,
+      GatewayIntentBits.GuildMessages,
+      GatewayIntentBits.MessageContent,
+    ],
   });
 
   discordClient.once('ready', () => {
     console.log(`Discord bot logged in as ${discordClient!.user!.tag}`);
+  });
+
+  // Respond to messages (for testing)
+  discordClient.on('messageCreate', async (message) => {
+    // Ignore bot's own messages
+    if (message.author.bot) return;
+
+    // Respond "hola" to any message
+    await message.reply('hola');
   });
 
   await discordClient.login(process.env.DISCORD_BOT_TOKEN);
