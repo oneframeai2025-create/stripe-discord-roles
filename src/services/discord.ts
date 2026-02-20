@@ -4,6 +4,7 @@ import { analyzePost } from './openai';
 let discordClient: Client | null = null;
 
 const LABORATORIO_CHANNEL = 'laboratorio-de-ganchos';
+const ADMINS_CHANNEL = 'admins';
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
@@ -164,4 +165,29 @@ export async function removeRoleByUsername(
 
   await member.roles.remove(role);
   console.log(`❌ Removed role ${role.name} from user ${member.user.tag} (${member.user.username})`);
+}
+
+export async function sendAdminNotification(message: string): Promise<void> {
+  if (!discordClient) {
+    throw new Error('Discord client not initialized');
+  }
+
+  try {
+    const guild = await discordClient.guilds.fetch(process.env.DISCORD_GUILD_ID!);
+    const channels = await guild.channels.fetch();
+    
+    const adminChannel = channels.find(
+      (ch) => ch?.type === 0 && ch.name === ADMINS_CHANNEL
+    );
+
+    if (!adminChannel || adminChannel.type !== 0) {
+      console.warn(`Admin channel #${ADMINS_CHANNEL} not found`);
+      return;
+    }
+
+    await adminChannel.send(message);
+    console.log(`📢 Admin notification sent to #${ADMINS_CHANNEL}`);
+  } catch (error) {
+    console.error('Error sending admin notification:', error);
+  }
 }

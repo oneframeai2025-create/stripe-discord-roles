@@ -1,5 +1,5 @@
 import Stripe from 'stripe';
-import { assignRoleByUsername, removeRoleByUsername } from './discord';
+import { assignRoleByUsername, removeRoleByUsername, sendAdminNotification } from './discord';
 import { getRoleMapping } from '../utils/env';
 
 export async function handleSubscriptionEvent(
@@ -49,21 +49,65 @@ export async function handleSubscriptionEvent(
 
   console.log(`Processing subscription for Discord user: ${discordUsername}`);
 
+  // Get role name for notification
+  const roleMapping = getRoleMapping();
+  const roleName = Object.keys(roleMapping).find(key => roleMapping[key] === roleId) || 'Unknown';
+
   // Handle event
   switch (event.type) {
     case 'customer.subscription.created':
+      if (subscription.status === 'active') {
+        await assignRoleByUsername(discordUsername, roleId);
+        await sendAdminNotification(
+          `✅ **Nueva suscripción**\n` +
+          `👤 Usuario: @${discordUsername}\n` +
+          `📧 Email: ${customer.email}\n` +
+          `🎫 Tier: ${roleName}\n` +
+          `💰 Precio: ${formatPrice(subscription.items.data[0]?.price)}\n` +
+          `📅 Estado: ${subscription.status}`
+        );
+      }
+      break;
+
     case 'customer.subscription.updated':
       if (subscription.status === 'active') {
         await assignRoleByUsername(discordUsername, roleId);
+        await sendAdminNotification(
+          `🔄 **Suscripción actualizada**\n` +
+          `👤 Usuario: @${discordUsername}\n` +
+          `📧 Email: ${customer.email}\n` +
+          `🎫 Tier: ${roleName}\n` +
+          `📅 Estado: ${subscription.status}`
+        );
       } else {
         await removeRoleByUsername(discordUsername, roleId);
+        await sendAdminNotification(
+          `⚠️ **Suscripción pausada/inactiva**\n` +
+          `👤 Usuario: @${discordUsername}\n` +
+          `📧 Email: ${customer.email}\n` +
+          `📅 Estado: ${subscription.status}`
+        );
       }
       break;
 
     case 'customer.subscription.deleted':
       await removeRoleByUsername(discordUsername, roleId);
+      await sendAdminNotification(
+        `❌ **Suscripción cancelada**\n` +
+        `👤 Usuario: @${discordUsername}\n` +
+        `📧 Email: ${customer.email}\n` +
+        `🎫 Tier: ${roleName}`
+      );
       break;
   }
+}
+
+function formatPrice(price?: Stripe.Price): string {
+  if (!price) return 'N/A';
+  const amount = price.unit_amount || 0;
+  const currency = price.currency.toUpperCase();
+  return `${(amount / 100).toFixed(2)} ${currency}`;
+}
 }
 
 async function getCustomer(

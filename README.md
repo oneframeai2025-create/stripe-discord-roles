@@ -8,6 +8,8 @@ Webhook server que asigna roles de Discord automáticamente basándose en suscri
 - ✅ Asignación/eliminación automática de roles en Discord
 - ✅ **Análisis de posts con OpenAI (gpt-4o-mini)**
 - ✅ Feedback honesto y constructivo (0-10)
+- ✅ **Notificaciones a #admins de suscripciones**
+- ✅ Búsqueda flexible de usuarios por username
 - ✅ TypeScript + Fastify
 - ✅ Listo para Railway
 
