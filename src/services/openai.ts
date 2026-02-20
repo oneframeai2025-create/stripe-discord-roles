@@ -2,6 +2,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
+  organization: process.env.OPENAI_ORG_ID,
 });
 
 const SYSTEM_PROMPT = `Eres un crítico BRUTAL pero constructivo de posts de X (Twitter). Tu trabajo es puntuar posts del 0 al 10 y dar feedback honesto.

@@ -85,15 +85,24 @@ DISCORD_GUILD_ID=123456789
 
 # OpenAI (para análisis de posts)
 OPENAI_API_KEY=sk-...
+OPENAI_ORG_ID=org-...
 
 # Mapeo producto:rol (separado por comas)
 ROLE_MAPPING=prod_abc123:987654321,prod_def456:123456789
 ```
 
-**Para obtener la OpenAI API Key:**
-1. Ve a https://platform.openai.com/api-keys
-2. Crea una nueva API key
-3. Cópiala y pégala en Railway
+**Para obtener las credenciales de OpenAI:**
+
+1. **API Key:**
+   - Ve a https://platform.openai.com/api-keys
+   - Crea una nueva API key
+   - Cópiala (empieza con `sk-...`)
+
+2. **Organization ID:**
+   - Ve a https://platform.openai.com/settings/organization/general
+   - Copia el "Organization ID" (empieza con `org-...`)
+
+3. Pega ambas en Railway como variables de entorno
 
 ### 5. Metadata en Stripe
 

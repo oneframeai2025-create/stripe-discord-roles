@@ -4,6 +4,8 @@ export function validateEnv(): void {
     'STRIPE_WEBHOOK_SECRET',
     'DISCORD_BOT_TOKEN',
     'DISCORD_GUILD_ID',
+    'OPENAI_API_KEY',
+    'OPENAI_ORG_ID',
   ];
 
   for (const key of required) {
