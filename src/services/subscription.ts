@@ -1,5 +1,5 @@
 import Stripe from 'stripe';
-import { assignRole, removeRole } from './discord';
+import { assignRoleByUsername, removeRoleByUsername } from './discord';
 import { getRoleMapping } from '../utils/env';
 
 export async function handleSubscriptionEvent(
@@ -13,12 +13,12 @@ export async function handleSubscriptionEvent(
     return;
   }
 
-  // Get Discord user ID from customer metadata
-  const discordUserId = customer.metadata?.discord_user_id;
+  // Get Discord username from customer metadata
+  const discordUsername = customer.metadata?.discord_username;
 
-  if (!discordUserId) {
+  if (!discordUsername) {
     console.warn(
-      `No Discord user ID found in customer metadata for ${customer.email}`
+      `No Discord username found in customer metadata for ${customer.email}`
     );
     return;
   }
@@ -40,19 +40,21 @@ export async function handleSubscriptionEvent(
     return;
   }
 
+  console.log(`Processing subscription for Discord user: ${discordUsername}`);
+
   // Handle event
   switch (event.type) {
     case 'customer.subscription.created':
     case 'customer.subscription.updated':
       if (subscription.status === 'active') {
-        await assignRole(discordUserId, roleId);
+        await assignRoleByUsername(discordUsername, roleId);
       } else {
-        await removeRole(discordUserId, roleId);
+        await removeRoleByUsername(discordUsername, roleId);
       }
       break;
 
     case 'customer.subscription.deleted':
-      await removeRole(discordUserId, roleId);
+      await removeRoleByUsername(discordUsername, roleId);
       break;
   }
 }

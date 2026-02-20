@@ -104,18 +104,32 @@ ROLE_MAPPING=prod_abc123:987654321,prod_def456:123456789
 
 3. Pega ambas en Railway como variables de entorno
 
-### 5. Metadata en Stripe
+### 5. Capturar Username de Discord en Checkout
 
-Para vincular usuarios de Stripe con Discord, añade esto a los **Customer metadata** en Stripe:
+El sistema usa el **username de Discord** (no el ID numérico) para asignar roles.
 
+**Opción 1: Custom Field en Stripe Checkout** (Recomendado)
+1. En tu Payment Link de Stripe → Settings → Custom fields
+2. Añade un custom field:
+   - Label: "Usuario de Discord"
+   - Type: Text
+   - **Metadata key:** `discord_username` (muy importante)
+3. El usuario escribe su username (con o sin @): `usuario` o `@usuario`
+4. Stripe lo guarda en `customer.metadata.discord_username`
+
+**Opción 2: Manualmente en Customer Metadata**
+En Stripe Dashboard → Customers → Editar → Metadata:
 ```
-discord_user_id: 123456789012345678
+discord_username: usuario
 ```
 
-Puedes hacerlo:
-- Manualmente en Stripe Dashboard
-- Programáticamente con la API de Stripe
-- Durante el checkout (custom fields)
+**Opción 3: Programáticamente**
+Al crear el customer con la API:
+```js
+metadata: {
+  discord_username: "usuario"
+}
+```
 
 ## Deployment en Railway
 

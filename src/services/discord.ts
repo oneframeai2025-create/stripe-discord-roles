@@ -86,3 +86,73 @@ export async function removeRole(
   await member.roles.remove(role);
   console.log(`Removed role ${role.name} from user ${member.user.tag}`);
 }
+
+export async function assignRoleByUsername(
+  username: string,
+  roleId: string
+): Promise<void> {
+  if (!discordClient) {
+    throw new Error('Discord client not initialized');
+  }
+
+  // Clean username (remove @ if present)
+  const cleanUsername = username.replace(/^@/, '').toLowerCase();
+
+  const guild = await discordClient.guilds.fetch(process.env.DISCORD_GUILD_ID!);
+  
+  // Fetch all members to search by username
+  const members = await guild.members.fetch();
+  
+  // Find member by username (case-insensitive)
+  const member = members.find(
+    (m) => m.user.username.toLowerCase() === cleanUsername
+  );
+
+  if (!member) {
+    throw new Error(`Discord user not found: ${username}`);
+  }
+
+  const role = await guild.roles.fetch(roleId);
+
+  if (!role) {
+    throw new Error(`Role ${roleId} not found`);
+  }
+
+  await member.roles.add(role);
+  console.log(`✅ Assigned role ${role.name} to user ${member.user.tag} (${member.user.username})`);
+}
+
+export async function removeRoleByUsername(
+  username: string,
+  roleId: string
+): Promise<void> {
+  if (!discordClient) {
+    throw new Error('Discord client not initialized');
+  }
+
+  // Clean username (remove @ if present)
+  const cleanUsername = username.replace(/^@/, '').toLowerCase();
+
+  const guild = await discordClient.guilds.fetch(process.env.DISCORD_GUILD_ID!);
+  
+  // Fetch all members to search by username
+  const members = await guild.members.fetch();
+  
+  // Find member by username (case-insensitive)
+  const member = members.find(
+    (m) => m.user.username.toLowerCase() === cleanUsername
+  );
+
+  if (!member) {
+    throw new Error(`Discord user not found: ${username}`);
+  }
+
+  const role = await guild.roles.fetch(roleId);
+
+  if (!role) {
+    throw new Error(`Role ${roleId} not found`);
+  }
+
+  await member.roles.remove(role);
+  console.log(`❌ Removed role ${role.name} from user ${member.user.tag} (${member.user.username})`);
+}
