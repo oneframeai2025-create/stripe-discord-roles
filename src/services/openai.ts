@@ -35,6 +35,11 @@ PATRONES MÁS VIRALES (ordenados por impresiones promedio):
 🏅 URGENTE FLIPANDO → 204K promedio ✅ VÁLIDO
    ✅ "URGENTE ‼️ Estoy FLIPANDO 🤯 Este es el AHORRO medio por provincia..." (204K imp)
    📌 NO es genérico si tiene contexto específico + datos
+   
+🏅 INJUSTICIA GENERACIONAL → 200K+ promedio ✅ PATRÓN BRUTAL
+   ✅ "NOS HAN ENGAÑADO 😡 Nos dijeron: 'X'. Realidad: [contraste brutal]"
+   ✅ Funciona por contraste emocional + rabia justificada
+   📌 Elementos clave: MAYÚSCULAS emocionales, emojis, listas de contrastes, metáfora
 
 CARACTERÍSTICAS EN TOP 100:
 ✅ Emojis: 71% (casi obligatorio)
@@ -57,18 +62,18 @@ PUNTUACIÓN CALIBRADA (basada en impresiones reales):
    • "Mis amigos ya no me dirigen la palabra porque..."
    • "Mi novia se ha enfadado: [situación específica]..."
    
-8/10: Comparación regiones + datos concretos (900K+ potencial)
-   • "Así de CARO está [X] en cada provincia: 🟢..."
-   • "La MEJOR región por [X] según la IA..."
+8-9/10: Injusticia generacional + contraste emocional (200K-900K+ potencial)
+   • "NOS HAN ENGAÑADO 😡 Nos dijeron: 'X'. Realidad: [contraste brutal]"
+   • "Comparación regiones + datos concretos: Así de CARO está [X]..."
    
-7/10: Dilema + opciones claras (700K+ potencial)
+7-8/10: Dilema + opciones claras (700K+ potencial)
    • "Solo puedes elegir uno: TRABAJO 🅰️ vs TRABAJO 🅱️..."
    • "URGENTE ‼️ Estoy FLIPANDO 🤯 [contexto específico + datos]" ← VÁLIDO
    
-6/10: Storytelling familiar + números (650K+ potencial)
+6-7/10: Storytelling familiar + números (650K+ potencial)
    • "Tu padre/madre [acción con €]..."
    
-5/10: Hook correcto pero patrón menos viral (100-300K potencial)
+5-6/10: Hook correcto pero patrón menos viral (100-300K potencial)
    • Tiene estructura visual + datos
    • Falta gancho emocional/dilema/comparación
    
@@ -88,24 +93,39 @@ ESTRUCTURA VISUAL (presente en 71% de top 100):
 ✅ MAYÚSCULAS para énfasis
 ✅ Espacios entre secciones
 
-RESPUESTA (sé preciso y útil):
+EVALUAR CORRECTAMENTE:
+
+❌ NO penalices por no usar "historia personal" si usa otro patrón viral
+❌ NO sugieras cambiar a "historia personal" automáticamente
+✅ RECONOCE múltiples patrones virales (injusticia, dilema, comparación, etc.)
+✅ Si el post tiene: emoción + estructura + datos → mínimo 7/10
+
+EVALUAR "NOS HAN ENGAÑADO + contraste":
+✅ Hook emocional fuerte → +2 puntos
+✅ Contraste "Nos dijeron vs Realidad" → +2 puntos
+✅ Estructura visual con emojis → +1 punto
+✅ Metáfora ("cambiaron las REGLAS") → +1 punto
+✅ Pregunta final → +1 punto
+= 8-9/10 MÍNIMO
+
+RESPUESTA (sé preciso y justo):
 
 📊 PUNTUACIÓN: X/10
 
 ✅ LO QUE FUNCIONA:
-[Identifica elementos del top 100 presentes]
+[Identifica elementos virales presentes y di POR QUÉ funcionan]
 
-❌ LO QUE FALTA:
-[Compara con el patrón más viral que podría usar]
+❌ LO QUE FALTA (solo si <8/10):
+[Mejoras ESPECÍFICAS sin cambiar el patrón del post]
 
-💡 REESCRIBE EL HOOK (solo si <7/10):
-[Versión mejorada usando un patrón del top 100]
+💡 REESCRIBE EL HOOK (SOLO si <7/10):
+[Versión mejorada MANTENIENDO el patrón original, NO cambies a historia personal automáticamente]
 
 🎯 ESTRUCTURA:
-[Mejoras concretas basadas en datos reales]
+[Mejoras concretas SIN destruir lo que ya funciona]
 
 📈 POTENCIAL:
-[Estimación basada en impresiones promedio del patrón usado]`;
+[Estimación realista basada en el patrón usado, no solo en "historia personal"]`;
 
 export async function analyzePost(postContent: string): Promise<string> {
   try {
