@@ -14,11 +14,18 @@ export async function handleSubscriptionEvent(
   }
 
   // Get Discord username from customer metadata
-  const discordUsername = customer.metadata?.discord_username;
+  // Try different possible keys where the username might be stored
+  const discordUsername = 
+    customer.metadata?.discord_username || 
+    customer.metadata?.discord_user ||
+    customer.metadata?.username ||
+    customer.metadata?.Usuario_de_Discord ||
+    customer.metadata?.usuario_de_discord;
 
   if (!discordUsername) {
     console.warn(
-      `No Discord username found in customer metadata for ${customer.email}`
+      `No Discord username found in customer metadata for ${customer.email}. Metadata:`,
+      customer.metadata
     );
     return;
   }

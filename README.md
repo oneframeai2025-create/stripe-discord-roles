@@ -111,11 +111,16 @@ El sistema usa el **username de Discord** (no el ID numérico) para asignar role
 **Opción 1: Custom Field en Stripe Checkout** (Recomendado)
 1. En tu Payment Link de Stripe → Settings → Custom fields
 2. Añade un custom field:
-   - Label: "Usuario de Discord"
+   - Label: "Usuario de Discord" (lo que ve el usuario)
    - Type: Text
-   - **Metadata key:** `discord_username` (muy importante)
+   - **Metadata key:** Una de estas opciones:
+     - `discord_username` (recomendado)
+     - `discord_user`
+     - `username`
 3. El usuario escribe su username (con o sin @): `usuario` o `@usuario`
-4. Stripe lo guarda en `customer.metadata.discord_username`
+4. Stripe lo guarda en customer metadata
+
+**Nota:** El sistema busca automáticamente en estas keys: `discord_username`, `discord_user`, `username`, `Usuario_de_Discord`, `usuario_de_discord`
 
 **Opción 2: Manualmente en Customer Metadata**
 En Stripe Dashboard → Customers → Editar → Metadata:

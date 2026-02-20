@@ -21,27 +21,36 @@ export async function initDiscordBot(): Promise<void> {
 
   // Analyze posts in #laboratorio-de-ganchos
   discordClient.on('messageCreate', async (message) => {
-    // Ignore bot's own messages
-    if (message.author.bot) return;
+    try {
+      // Ignore bot's own messages
+      if (message.author.bot) return;
 
-    // Only respond in #laboratorio-de-ganchos
-    if (message.channel.type === 0 && message.channel.name !== LABORATORIO_CHANNEL) {
-      return;
+      // Only respond in #laboratorio-de-ganchos
+      if (message.channel.type === 0 && message.channel.name !== LABORATORIO_CHANNEL) {
+        return;
+      }
+
+      // Ignore very short messages (< 10 chars)
+      if (message.content.length < 10) {
+        return;
+      }
+
+      console.log(`📝 Analyzing post from ${message.author.username}: "${message.content.substring(0, 50)}..."`);
+
+      // Show typing indicator
+      await message.channel.sendTyping();
+
+      // Analyze the post
+      const analysis = await analyzePost(message.content);
+
+      // Reply with analysis
+      await message.reply(analysis);
+      
+      console.log(`✅ Analysis sent to ${message.author.username}`);
+    } catch (error) {
+      console.error('Error handling message:', error);
+      await message.reply('❌ Error al analizar el post. Verifica que las API keys de OpenAI estén configuradas.');
     }
-
-    // Ignore very short messages (< 10 chars)
-    if (message.content.length < 10) {
-      return;
-    }
-
-    // Show typing indicator
-    await message.channel.sendTyping();
-
-    // Analyze the post
-    const analysis = await analyzePost(message.content);
-
-    // Reply with analysis
-    await message.reply(analysis);
   });
 
   await discordClient.login(process.env.DISCORD_BOT_TOKEN);
