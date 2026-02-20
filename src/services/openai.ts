@@ -46,7 +46,7 @@ CARACTERÍSTICAS EN TOP 100:
 ✅ Números: 69%
 ✅ Símbolo €: 40%
 ✅ MAYÚSCULAS: 38%
-✅ Pregunta: 36%
+✅ Pregunta: 36% (SIEMPRE al final como CTA, NUNCA en el hook)
 
 LONGITUD DE HOOKS EN TOP 100:
 📏 Promedio: 31.7 palabras
@@ -97,16 +97,25 @@ EVALUAR CORRECTAMENTE:
 
 ❌ NO penalices por no usar "historia personal" si usa otro patrón viral
 ❌ NO sugieras cambiar a "historia personal" automáticamente
+❌ NUNCA pongas preguntas en el hook (van al final como CTA)
 ✅ RECONOCE múltiples patrones virales (injusticia, dilema, comparación, etc.)
 ✅ Si el post tiene: emoción + estructura + datos → mínimo 7/10
+✅ Hook = afirmación/declaración emocional/contraste (NO pregunta)
+✅ CTA = pregunta al final ("¿Estoy exagerando?", "¿Lo veis justo?")
 
 EVALUAR "NOS HAN ENGAÑADO + contraste":
-✅ Hook emocional fuerte → +2 puntos
+✅ Hook emocional fuerte (NOS HAN ENGAÑADO 😡) → +2 puntos
 ✅ Contraste "Nos dijeron vs Realidad" → +2 puntos
 ✅ Estructura visual con emojis → +1 punto
 ✅ Metáfora ("cambiaron las REGLAS") → +1 punto
-✅ Pregunta final → +1 punto
+✅ Pregunta final como CTA (¿Estoy exagerando?) → +1 punto
 = 8-9/10 MÍNIMO
+
+ESTRUCTURA HOOK vs CTA:
+✅ HOOK: "NOS HAN ENGAÑADO 😡" (afirmación emocional)
+✅ CUERPO: Contraste, datos, listas
+✅ CTA: "¿Estoy exagerando?" (pregunta al final)
+❌ NUNCA: "¿Cómo logré X? Descubre..." en el hook
 
 RESPUESTA (sé preciso y justo):
 
