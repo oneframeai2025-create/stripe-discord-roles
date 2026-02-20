@@ -1,6 +1,9 @@
 import { Client, GatewayIntentBits } from 'discord.js';
+import { analyzePost } from './openai';
 
 let discordClient: Client | null = null;
+
+const LABORATORIO_CHANNEL = 'laboratorio-de-ganchos';
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
@@ -16,13 +19,29 @@ export async function initDiscordBot(): Promise<void> {
     console.log(`Discord bot logged in as ${discordClient!.user!.tag}`);
   });
 
-  // Respond to messages (for testing)
+  // Analyze posts in #laboratorio-de-ganchos
   discordClient.on('messageCreate', async (message) => {
     // Ignore bot's own messages
     if (message.author.bot) return;
 
-    // Respond "hola" to any message
-    await message.reply('hola');
+    // Only respond in #laboratorio-de-ganchos
+    if (message.channel.type === 0 && message.channel.name !== LABORATORIO_CHANNEL) {
+      return;
+    }
+
+    // Ignore very short messages (< 10 chars)
+    if (message.content.length < 10) {
+      return;
+    }
+
+    // Show typing indicator
+    await message.channel.sendTyping();
+
+    // Analyze the post
+    const analysis = await analyzePost(message.content);
+
+    // Reply with analysis
+    await message.reply(analysis);
   });
 
   await discordClient.login(process.env.DISCORD_BOT_TOKEN);

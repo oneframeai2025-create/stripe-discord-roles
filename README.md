@@ -1,13 +1,34 @@
-# Stripe Discord Roles
+# Stripe Discord Roles + Post Analyzer
 
-Webhook server que asigna roles de Discord automáticamente basándose en suscripciones de Stripe.
+Webhook server que asigna roles de Discord automáticamente basándose en suscripciones de Stripe + Bot analizador de posts con IA.
 
 ## Características
 
 - ✅ Webhook de Stripe con validación de firma
 - ✅ Asignación/eliminación automática de roles en Discord
+- ✅ **Análisis de posts con OpenAI (gpt-4o-mini)**
+- ✅ Feedback honesto y constructivo (0-10)
 - ✅ TypeScript + Fastify
 - ✅ Listo para Railway
+
+## Bot Analizador de Posts
+
+El bot analiza automáticamente posts escritos en `#laboratorio-de-ganchos` y da feedback:
+
+**Qué analiza:**
+- Hooks emocionales
+- Estructura y formato
+- Engagement (preguntas, listas)
+- Claridad del mensaje
+- Valor aportado
+
+**Feedback incluye:**
+- Puntuación 0-10
+- Lo que funciona
+- Lo que falla (con soluciones específicas)
+- Mejora clave
+
+**El bot es honesto:** si el post es malo, lo dirá sin rodeos.
 
 ## Configuración
 
@@ -62,9 +83,17 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 DISCORD_BOT_TOKEN=MTIzNDU2...
 DISCORD_GUILD_ID=123456789
 
+# OpenAI (para análisis de posts)
+OPENAI_API_KEY=sk-...
+
 # Mapeo producto:rol (separado por comas)
 ROLE_MAPPING=prod_abc123:987654321,prod_def456:123456789
 ```
+
+**Para obtener la OpenAI API Key:**
+1. Ve a https://platform.openai.com/api-keys
+2. Crea una nueva API key
+3. Cópiala y pégala en Railway
 
 ### 5. Metadata en Stripe
 

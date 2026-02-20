@@ -17,6 +17,7 @@
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.1",
     "fastify": "^4.26.0",
+    "openai": "^4.28.0",
     "stripe": "^14.21.0"
   },
   "devDependencies": {
