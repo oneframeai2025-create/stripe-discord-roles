@@ -62,9 +62,14 @@ async function getCustomer(
 ): Promise<Stripe.Customer | null> {
   try {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-      apiVersion: '2024-12-18.acacia',
+      apiVersion: '2023-10-16',
     });
-    return await stripe.customers.retrieve(customerId);
+    const customer = await stripe.customers.retrieve(customerId);
+    // Ensure it's not a deleted customer
+    if (customer.deleted) {
+      return null;
+    }
+    return customer as Stripe.Customer;
   } catch (err) {
     console.error(`Error fetching customer: ${err}`);
     return null;
