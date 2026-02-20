@@ -81,6 +81,10 @@ export async function handleCheckoutCompleted(event: Stripe.Event): Promise<void
     return;
   }
 
+  // Get product details to show name
+  const product = await stripe.products.retrieve(productId);
+  const productName = product.name || productId;
+
   // Get role ID from mapping
   const roleMapping = getRoleMapping();
   const roleId = roleMapping[productId];
@@ -90,7 +94,7 @@ export async function handleCheckoutCompleted(event: Stripe.Event): Promise<void
     return;
   }
 
-  console.log(`Processing checkout for Discord user: ${discordUsername}, product: ${productId}`);
+  console.log(`Processing checkout for Discord user: ${discordUsername}, product: ${productName}`);
 
   // Save discord_username to customer metadata for future use
   await stripe.customers.update(customerId, {
@@ -103,12 +107,11 @@ export async function handleCheckoutCompleted(event: Stripe.Event): Promise<void
   await assignRoleByUsername(discordUsername, roleId);
 
   // Send notification
-  const roleName = Object.keys(roleMapping).find((key) => roleMapping[key] === roleId) || productId;
   await sendAdminNotification(
     `✅ **Nueva compra**\n` +
       `👤 Usuario: @${discordUsername}\n` +
       `📧 Email: ${customer.email}\n` +
-      `🎫 Producto: ${roleName}\n` +
+      `🎫 Producto: ${productName}\n` +
       `💰 Total: ${(session.amount_total || 0) / 100} ${session.currency?.toUpperCase()}`
   );
 }
@@ -144,6 +147,10 @@ export async function handleSubscriptionDeleted(event: Stripe.Event): Promise<vo
     return;
   }
 
+  // Get product details
+  const product = await stripe.products.retrieve(productId);
+  const productName = product.name || productId;
+
   // Get role ID
   const roleMapping = getRoleMapping();
   const roleId = roleMapping[productId];
@@ -153,18 +160,17 @@ export async function handleSubscriptionDeleted(event: Stripe.Event): Promise<vo
     return;
   }
 
-  console.log(`Removing role for Discord user: ${discordUsername}, product: ${productId}`);
+  console.log(`Removing role for Discord user: ${discordUsername}, product: ${productName}`);
 
   // Remove role
   await removeRoleByUsername(discordUsername, roleId);
 
   // Notify
-  const roleName = Object.keys(roleMapping).find((key) => roleMapping[key] === roleId) || productId;
   await sendAdminNotification(
     `❌ **Suscripción cancelada**\n` +
       `👤 Usuario: @${discordUsername}\n` +
       `📧 Email: ${customer.email}\n` +
-      `🎫 Tier: ${roleName}`
+      `🎫 Producto: ${productName}`
   );
 }
 
