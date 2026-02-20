@@ -1,6 +1,6 @@
 import { FastifyPluginAsync } from 'fastify';
 import Stripe from 'stripe';
-import { handleSubscriptionEvent } from '../services/subscription';
+import { handleCheckoutCompleted, handleSubscriptionDeleted, handleCustomerDeleted } from '../services/checkout';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: '2023-10-16',
@@ -50,10 +50,14 @@ export const stripeWebhook: FastifyPluginAsync = async (fastify) => {
 
     try {
       switch (event.type) {
-        case 'customer.subscription.created':
-        case 'customer.subscription.updated':
+        case 'checkout.session.completed':
+          await handleCheckoutCompleted(event);
+          break;
         case 'customer.subscription.deleted':
-          await handleSubscriptionEvent(event);
+          await handleSubscriptionDeleted(event);
+          break;
+        case 'customer.deleted':
+          await handleCustomerDeleted(event);
           break;
         default:
           fastify.log.info(`Unhandled event type: ${event.type}`);
