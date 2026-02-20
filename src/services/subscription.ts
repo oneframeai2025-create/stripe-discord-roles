@@ -50,7 +50,6 @@ export async function handleSubscriptionEvent(
   console.log(`Processing subscription for Discord user: ${discordUsername}`);
 
   // Get role name for notification
-  const roleMapping = getRoleMapping();
   const roleName = Object.keys(roleMapping).find(key => roleMapping[key] === roleId) || 'Unknown';
 
   // Handle event
@@ -107,7 +106,6 @@ function formatPrice(price?: Stripe.Price): string {
   const amount = price.unit_amount || 0;
   const currency = price.currency.toUpperCase();
   return `${(amount / 100).toFixed(2)} ${currency}`;
-}
 }
 
 async function getCustomer(
