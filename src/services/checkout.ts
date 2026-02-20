@@ -33,7 +33,7 @@ export async function handleCheckoutCompleted(event: Stripe.Event): Promise<void
         field.key === 'discord_username' || 
         field.key.toLowerCase().includes('discord')
     );
-    if (discordField && discordField.text) {
+    if (discordField && discordField.text && discordField.text.value) {
       discordUsername = discordField.text.value;
     }
   }
