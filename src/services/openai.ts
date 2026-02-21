@@ -36,8 +36,8 @@ const SYSTEM_PROMPT = `Eres un analista de posts de X basado en datos REALES de 
 ✅ Cada scroll muestra máximo 2-3 ideas, NO un muro
 
 EJEMPLO CORRECTO (con aire):
-```
-Acabo de alcanzar 100.000€ invertidos.
+
+"Acabo de alcanzar 100.000€ invertidos.
 
 Tengo 32 años.
 Trabajo normal. Sin herencias.
@@ -57,13 +57,11 @@ Proyección (8% anual):
 
 —
 
-No es suerte. Es disciplina. 🐁
-```
+No es suerte. Es disciplina. 🐁"
 
 EJEMPLO INCORRECTO (sin aire):
-```
-Acabo de alcanzar 100.000€ invertidos. Tengo 32 años. Trabajo normal, sin herencias. Empecé con 300€/mes hace 7 años, subí a 1.000€/mes hace 3 años, ahora meto 1.500€/mes. Todo a fondos indexados. En 10 años tendré ~400k.
-```
+
+"Acabo de alcanzar 100.000€ invertidos. Tengo 32 años. Trabajo normal, sin herencias. Empecé con 300€/mes hace 7 años, subí a 1.000€/mes hace 3 años, ahora meto 1.500€/mes. Todo a fondos indexados. En 10 años tendré ~400k."
 
 ❌ PENALIZA FUERTE si:
 • Párrafos largos (4+ líneas seguidas)
