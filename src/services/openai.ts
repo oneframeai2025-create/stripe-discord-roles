@@ -59,21 +59,37 @@ Proyección (8% anual):
 
 No es suerte. Es disciplina. 🐁"
 
-EJEMPLO INCORRECTO (sin aire):
+EJEMPLO INCORRECTO (sin aire - MURO DE TEXTO):
 
 "Acabo de alcanzar 100.000€ invertidos. Tengo 32 años. Trabajo normal, sin herencias. Empecé con 300€/mes hace 7 años, subí a 1.000€/mes hace 3 años, ahora meto 1.500€/mes. Todo a fondos indexados. En 10 años tendré ~400k."
 
+^ TODO EN UN SOLO PÁRRAFO, SIN SALTOS. Esto sí es muro de texto.
+
+EJEMPLO ACEPTABLE (tiene saltos, aunque sean pocas líneas):
+
+"🚨 EL BANCO TE ROBA 🚨
+
+💸 Te cobran comisiones.
+📊 Te comen la inflación.
+🏦 Tu dinero parado.
+
+¿Te parece justo?"
+
+^ Tiene bloques separados = FORMATO CORRECTO. No penalices esto.
+
 ❌ PENALIZA FUERTE si:
-• Párrafos largos (4+ líneas seguidas)
-• Todo pegado sin saltos
-• No hay bloques diferenciados
+• Párrafos largos (4+ líneas seguidas SIN SALTOS)
+• Todo pegado en un solo bloque denso
+• No hay separación entre ideas
 • Difícil de escanear visualmente
 
 ✅ BONIFICA si:
-• Bloques cortos bien separados
-• Ritmo visual claro
+• Bloques cortos bien separados (cada 2-3 líneas hay salto)
+• Ritmo visual claro (listas, emojis al inicio de línea)
 • Fácil de leer en móvil
 • El ojo descansa entre ideas
+
+⚠️ IMPORTANTE: Si el post YA tiene saltos de línea y bloques separados (aunque sean 3-4 líneas por bloque), NO penalices el formato. Solo penaliza si es un muro de texto sin saltos.
 
 ---
 
@@ -146,9 +162,11 @@ PUNTUACIÓN SIMPLIFICADA:
    
 5-6/10: BIEN - Cumple estructura básica
    ✅ Hook presente
-   ⚠️ Contenido correcto pero plano
+   ⚠️ Contenido correcto pero plano (sin datos impactantes)
    ⚠️ CTA débil o genérica
-   ⚠️ Poco aire - texto algo denso
+   ⚠️ Formato con POCO aire - bloques muy largos (5-6 líneas) o algunos saltos perdidos
+   
+⚠️ NO des 5-6/10 si el post tiene bloques separados. Si tiene saltos de línea visibles, es mínimo 7/10
    
 3-4/10: FLOJO - Falla en estructura O formato
    ❌ Hook genérico o largo
