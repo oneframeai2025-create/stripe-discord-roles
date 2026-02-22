@@ -60,6 +60,7 @@ PATRÓN DE INSIGHT:
 • Quién gana/pierde realmente
 • Contraste emocional o paradoja
 • 1 línea impactante que cambia la perspectiva
+• HOOK EMOCIONAL > DATOS: Impacto humano primero, estadísticas después
 
 EJEMPLOS VARIADOS (aprende el patrón, no copies):
    ✅ "📈 Ellos GANAN contigo cada mes."
@@ -67,6 +68,12 @@ EJEMPLOS VARIADOS (aprende el patrón, no copies):
    ✅ "🏦 Tu dinero trabaja... pero para ELLOS, no para ti."
    ✅ "⚡ Mientras tú ahorras, la inflación te ROBA más rápido."
    ✅ "🎯 No es que no tengas dinero. Es que no sabes DÓNDE se va."
+
+PRINCIPIOS CRÍTICOS:
+• Localización: Siempre € (no $) para España
+• MAYÚSCULAS selectivas en puntos de máximo impacto (escándalo, indignación)
+• Menos relleno, más punch - directo a la yugular
+• Emojis solo funcionales (☠️ drama, 🤔 reflexión) - nunca decorativos
 
 ESTE INSIGHT ES LA CLAVE DEL ENGAGEMENT - NO LO OMITAS
    
@@ -85,6 +92,7 @@ EJEMPLOS VARIADOS:
    ✅ "¿Vosotros qué haríais? 🤷"
    ✅ "¿A cuántos os pasa? 💭"
    ✅ "¿O soy yo el raro? 😅"
+   ✅ "¿Cómo es posible? 🤔" (provocador, genera indignación)
 
 PROHIBIDO:
    ❌ NO "Descubre cómo..." (no es natural)
