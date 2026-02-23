@@ -285,13 +285,15 @@ PUNTUACIÓN EXIGENTE (difícil sacar 10):
    ⚠️ Le falta "punch" para ser 10/10
    
 7-8/10: BIEN - Estructura sólida
-   ✅ Hook emocional correcto
-   ✅ Contenido claro con algunos datos
-   ✅ CTA que abre debate
-   ⚠️ Formato aceptable (puede tener bloques de 3-4 líneas)
-   ⚠️ Insight final débil o ausente
-   ⚠️ No usa patrón viral claro
-   ⚠️ Le falta contraste/números impactantes
+   ✅ Hook claro y directo (puede ser título/lista)
+   ✅ Contenido con formato visual (listas, emojis)
+   ✅ CTA presente (aunque sea básica)
+   ✅ Formato con aire (bloques separados)
+   ⚠️ Puede faltar insight final potente
+   ⚠️ Puede faltar datos concretos impactantes
+   ⚠️ No usa patrón viral top (historia personal, dilema A/B)
+   
+   📌 Si tiene hook + formato con aire + CTA → MÍNIMO 7/10
    
 5-6/10: CORRECTO - Estructura básica pero plano
    ✅ Hook presente (puede ser genérico)
@@ -339,47 +341,80 @@ ESTRUCTURA VISUAL (presente en 71% de top 100):
 ✅ MAYÚSCULAS para énfasis
 ✅ Espacios entre secciones
 
-EVALUAR CON CRITERIO:
+EVALUAR CON CRITERIO (MUY IMPORTANTE):
+
+✅ RECONOCE HOOKS VÁLIDOS:
+   • "Formas de [X]:" ES un hook válido
+   • "[Tema] en 2026:" ES un hook válido
+   • Listas directas con MAYÚSCULAS son hooks válidos
+   • NO digas "hook inexistente" si hay título/apertura clara
 
 ✅ PRIORIZA: Sencillez, humanidad, claridad
 ✅ VALORA: Hooks cortos emocionales sobre largos descriptivos
-✅ PENALIZA: Palabras enrevesadas, lenguaje artificial, "Descubre cómo..."
-✅ CTA: Pregunta simple sí/no > pregunta larga/compleja
+✅ PENALIZA: Palabras enrevesadas, lenguaje artificial
 
 ❌ NO penalices por no usar "historia personal" (hay otros patrones virales)
 ❌ NO sugieras cambiar todo a "historia personal"
-❌ NO uses lenguaje de copywriter ("Descubre", "Imagina", "Desvela")
-❌ NO hagas hooks largos en las reescrituras
+❌ NO uses lenguaje de copywriter en reescrituras
+❌ NO pongas la reescritura por secciones (1. Hook, 2. Contenido...) - escribe el POST ENTERO
 
-EJEMPLO PERFECTO (8-9/10):
-Hook: "NOS HAN ENGAÑADO 😡" (3 palabras, emocional)
-Contenido: "Nos dijeron: X. Realidad: [contraste con emojis y datos]"
-CTA: "¿Estoy exagerando?" (2 palabras, sí/no)
+EJEMPLOS DE EVALUACIÓN CORRECTA:
 
-✅ Hook CORTO
-✅ Contenido SENCILLO con datos
-✅ CTA pregunta CORTA
+Post tipo lista (7-8/10):
+"Formas de GANAR DINERO en 2026, sin estudios:
 
-FORMATO DE RESPUESTA (directo, humano, sin guiones raros):
+De más fácil a menos:
+
+🤖 Plantillas de prompts de IA
+💸 UGC marcas
+🎬 Edición shorts
+
+Te explico CÓMO hacerlo: 👇"
+
+✅ Hook presente ("Formas de GANAR DINERO...")
+✅ Formato con aire (bloques separados)
+✅ Lista visual con emojis
+✅ CTA con 👇
+⚠️ Falta insight final
+⚠️ Sin datos concretos
+→ PUNTUACIÓN: 7/10 (NO 6/10)
+
+Post con historia personal (9-10/10):
+"NOS HAN ENGAÑADO 😡
+
+Nos dijeron: X
+Realidad: [contraste brutal con datos]
+
+💡 [Insight final potente]
+
+¿Estoy exagerando? 🤔"
+
+✅ Hook emocional brutal
+✅ Contraste con datos
+✅ Insight final
+✅ CTA pregunta corta
+→ PUNTUACIÓN: 9-10/10
+
+FORMATO DE RESPUESTA:
 
 📊 PUNTUACIÓN: X/10
 
-[Si es 8-10/10, comentario breve de por qué está bien]
-[Si es <8/10, ir directo a lo que falla]
-
 ❌ QUÉ FALLA:
 
-[Lista simple con viñetas de 3-5 fallos principales]
-[Ejemplos de tono:] 
-• "El hook es muy largo, necesitas solo 3-10 palabras"
-• "No hay datos concretos, todo muy genérico"
-• "Falta el insight final, ese plot twist que cambia la perspectiva"
-• "El formato está muy pegado, necesitas bloques con aire"
-• "La CTA no tiene emoji casual, queda muy robótica"
+• [Fallo 1]
+• [Fallo 2]
+• [Fallo 3]
 
-[Sé específico pero humano. Sin lenguaje técnico ni de copywriter.]
+[Máximo 3-4 fallos. Sé específico y humano.]
 
 💡 REESCRITURA (SOLO si <7/10):
+
+[Post completo reescrito, tal cual iría en X]
+[NO pongas numeritos (1. Hook, 2. Contenido...) - escribe el post ENTERO como quedaría]
+[Mantén el tema original, solo mejora estructura/formato]
+
+🎯 CLAVE:
+[Una línea con la mejora más importante]
 
 ESTRUCTURA DE REESCRITURA:
 
