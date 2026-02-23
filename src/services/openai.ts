@@ -850,19 +850,24 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
 💡 REESCRITURA (SOLO si <7/10):
 
+───────────────────────────────
+
 [Post completo reescrito, tal cual iría en X]
 [USA "- " al inicio de items de lista para mejor formato]
 [NO pongas numeritos (1. Hook, 2. Contenido...)]
 [NO uses separadores "—" innecesarios]
 [Mantén el tema original, solo mejora estructura/formato]
 
-⚠️⚠️⚠️ TU RESPUESTA TERMINA AQUÍ ⚠️⚠️⚠️
+───────────────────────────────
 
-PROHIBIDO ABSOLUTAMENTE:
-❌ NO añadas "🎯 CLAVE:" después de la reescritura
-❌ NO añadas "🎯 CLAVE FINAL:" 
-❌ NO añadas NADA después del post reescrito
-❌ La reescritura es lo ÚLTIMO que escribes
+⚠️⚠️⚠️ DESPUÉS DE LA LÍNEA DE SEPARACIÓN NO ESCRIBAS ABSOLUTAMENTE NADA ⚠️⚠️⚠️
+
+PROHIBIDO ABSOLUTAMENTE AÑADIR:
+❌ NO "[FIN - SIN NADA MÁS]"
+❌ NO "🎯 CLAVE:"
+❌ NO "🎯 CLAVE FINAL:"
+❌ NO explicaciones adicionales
+❌ NO NADA - las líneas de separación marcan el fin
 
 EJEMPLO CORRECTO:
 
@@ -875,9 +880,13 @@ EJEMPLO CORRECTO:
 
 💡 REESCRITURA:
 
+───────────────────────────────
+
 [post completo aquí]
 
-[FIN - SIN NADA MÁS]
+───────────────────────────────
+
+(Ahí termina tu respuesta, sin añadir nada más)
 
 ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 
