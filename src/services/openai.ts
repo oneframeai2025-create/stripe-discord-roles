@@ -117,16 +117,24 @@ TIPO 2 - INSIGHT IMPLÍCITO (posts tipo revelación brutal):
 Ejemplo: "Estudias 25 años → Trabajas 40 → Libre 5 → Mueres"
 ^ EL INSIGHT ES TODO EL POST
 
-TIPO 3 - SIN INSIGHT (posts tipo dilema/encuesta/lista):
+TIPO 3 - SIN INSIGHT (posts tipo dilema/encuesta/lista práctica):
 • Posts tipo dilema A/B NO necesitan insight
 • Posts tipo encuesta/pregunta NO necesitan insight
-• Posts tipo lista práctica NO necesitan insight
-• El objetivo NO ES revelar, ES generar debate/utilidad
+• Posts tipo lista práctica/útil NO necesitan insight
+• El objetivo NO ES revelar, ES generar debate/dar utilidad
 
-Ejemplo: "Elige uno: TRABAJO 🅰️ vs TRABAJO 🅱️ ¿Con cuál te quedas?"
-^ NO necesita insight - el objetivo ES generar debate
+Ejemplos:
+   "Elige uno: TRABAJO 🅰️ vs TRABAJO 🅱️ ¿Con cuál te quedas?"
+   ^ NO necesita insight - objetivo es generar debate
+   
+   "Formas de GANAR DINERO en 2026:
+   - Item 1
+   - Item 2
+   - Item 3
+   Te explico CÓMO hacerlo: 👇"
+   ^ NO necesita insight - objetivo es dar utilidad
 
-⚠️ CRÍTICO: Posts tipo dilema/encuesta son 10/10 SIN insight final si ejecutan bien el formato. NO penalices.
+⚠️ CRÍTICO: Posts tipo dilema/encuesta/lista son 7-10/10 SIN insight final si ejecutan bien el formato. NO penalices por "falta de insight".
 
 PRINCIPIOS CRÍTICOS:
 • Localización: Siempre € (no $) para España
@@ -351,11 +359,13 @@ Posts tipo REVELACIÓN BRUTAL:
 • Ejemplo: "Estudias 25 años → Trabajas 40 → Libre 5 → Mueres. ¿Te das cuenta?"
 • ✅ Insight implícito - NO penalices
 
-Posts tipo LISTA DIRECTA:
-• Hook puede ser título descriptivo ("Formas de X:")
-• No necesitan storytelling
+Posts tipo LISTA DIRECTA/PRÁCTICA:
+• Hook puede ser título descriptivo ("Formas de X:", "X maneras de Y")
+• NO necesitan storytelling
+• NO necesitan insight final (objetivo es utilidad, no revelación)
 • Funcionan por utilidad + formato visual
 • ✅ Si tiene formato con aire + CTA → mínimo 7/10
+• ✅ Listas bien ejecutadas pueden ser 8-10/10 SIN insight
 
 Posts MINIMALISTAS:
 • 1-2 líneas brutales
@@ -633,12 +643,14 @@ Puntuación = CUÁNTAS señales + INTENSIDAD de cada una
 10/10: BRUTAL - Nivel top 1% viral 🔥🔥🔥
    Tiene 5-6 señales con INTENSIDAD MÁXIMA
    Ejemplos:
-   • Dilema A/B perfecto: hook claro, extremos brutales, formato perfecto, CTA debate → 10/10 (NO necesita insight final)
-   • Historia personal con datos concretos + twist polémico + formato aire + CTA reflexiva → 10/10
-   • Revelación brutal donde estructura entera ES el insight → 10/10
+   • Dilema A/B perfecto: hook claro, extremos brutales, formato perfecto, CTA debate → 10/10 (NO necesita insight)
+   • Lista práctica perfecta: hook claro, formato aire, utilidad clara, CTA promesa → 8-10/10 (NO necesita insight)
+   • Historia personal con datos + twist polémico + formato aire + CTA reflexiva → 10/10 (SÍ necesita insight)
+   • Revelación brutal donde estructura entera ES el insight → 10/10 (insight implícito)
    • Post único/original que rompe reglas pero tiene factor WTF masivo → 10/10
    
    📌 CRITERIO: Parece top 100 por impresiones. SÉ EXIGENTE pero RECONOCE perfección.
+   📌 NO penalices dilemas/encuestas/listas por "falta insight" - no lo necesitan.
    
 8-9/10: EXCELENTE - Muy cerca de viral
    ✅ Hook potente (emocional, corto, MAYÚSCULAS selectivas)
@@ -738,7 +750,7 @@ EVALUAR CON CRITERIO (MUY IMPORTANTE):
 
 EJEMPLOS DE EVALUACIÓN CORRECTA:
 
-Post tipo lista (7-8/10):
+Post tipo lista práctica (7-8/10):
 "Formas de GANAR DINERO en 2026, sin estudios:
 
 De más fácil a menos:
@@ -752,10 +764,10 @@ Te explico CÓMO hacerlo: 👇"
 ✅ Hook presente ("Formas de GANAR DINERO...")
 ✅ Formato con aire (bloques separados)
 ✅ Lista visual con emojis
-✅ CTA con 👇
-⚠️ Falta insight final
-⚠️ Sin datos concretos
-→ PUNTUACIÓN: 7/10 (NO 6/10)
+✅ CTA con 👇 (promesa de hilo)
+✅ NO necesita insight final (objetivo es utilidad)
+⚠️ Sin datos concretos (podría mejorar con €/h estimados)
+→ PUNTUACIÓN: 7-8/10 (NO 6/10 por "falta insight")
 
 Post con historia personal (9-10/10):
 "NOS HAN ENGAÑADO 😡
