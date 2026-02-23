@@ -57,36 +57,52 @@ Con muchos emojis (>3):
    - Te comen la inflación
    - Tienen tu dinero parado
    
-   💡 INSIGHT FINAL (CRÍTICO - LO MÁS IMPORTANTE):
+   💡 INSIGHT FINAL (2 TIPOS - ELIGE SEGÚN EL POST):
    
-PATRÓN DE INSIGHT:
+TIPO 1 - INSIGHT EXPLÍCITO (al final del post):
 • Plot twist o revelación potente ANTES del CTA
 • Quién gana/pierde realmente
-• Contraste emocional o paradoja
 • 1 línea impactante que cambia la perspectiva
-• HOOK EMOCIONAL > DATOS: Impacto humano primero, estadísticas después
 
-EJEMPLOS VARIADOS (aprende el patrón, no copies):
+Ejemplos:
    ✅ "📈 Ellos GANAN contigo cada mes."
    ✅ "💡 La mayoría espera el momento perfecto. Yo empecé con lo que tenía."
    ✅ "🏦 Tu dinero trabaja... pero para ELLOS, no para ti."
-   ✅ "⚡ Mientras tú ahorras, la inflación te ROBA más rápido."
-   ✅ "🎯 No es que no tengas dinero. Es que no sabes DÓNDE se va."
+
+TIPO 2 - INSIGHT IMPLÍCITO (el post ENTERO es la revelación):
+• Posts tipo "revelación brutal" donde TODO el contenido ES el insight
+• No necesita línea final explícita
+• El contraste/estructura ya cambia la perspectiva
+
+Ejemplo:
+   "La vida que nos enseñan es una ESTAFA
+   
+   📚 Estudias 22-25 años.
+   🧳 Trabajas 40-45 años.
+   🕊️ Eres "libre" 5-10 años.
+   
+   Con dolores y sin energía.
+   
+   ☠️ Te mueres.
+   
+   ¿Te das cuenta?"
+
+^ EL INSIGHT ES TODO EL POST. NO necesita "💡 El verdadero problema es..."
+
+⚠️ NO PENALICES posts tipo revelación brutal por "falta de insight final". Si el hook + contenido YA revelan la estafa/problema, el insight está implícito.
 
 PRINCIPIOS CRÍTICOS:
 • Localización: Siempre € (no $) para España
 • MAYÚSCULAS selectivas en puntos de máximo impacto (escándalo, indignación)
 • Menos relleno, más punch - directo a la yugular
 • Emojis solo funcionales (☠️ drama, 🤔 reflexión) - nunca decorativos
-
-ESTE INSIGHT ES LA CLAVE DEL ENGAGEMENT - NO LO OMITAS
    
 3️⃣ CTA: Pregunta CORTA que abra debate
 
 PATRÓN DE CTA:
 • Pregunta corta (3-8 palabras)
 • Preferiblemente sí/no o abierta simple
-• Emoji casual al final (🙄, 🤔, 😅, 😬, 🤷, 💭)
+• Emoji casual al final (🙄, 🤔, 😅, 😬, 🤷, 💭) - OPCIONAL si el post es muy heavy
 • Tono humano, conversacional
 
 EJEMPLOS VARIADOS:
@@ -97,10 +113,12 @@ EJEMPLOS VARIADOS:
    ✅ "¿A cuántos os pasa? 💭"
    ✅ "¿O soy yo el raro? 😅"
    ✅ "¿Cómo es posible? 🤔" (provocador, genera indignación)
+   ✅ "¿Te das cuenta?" (reflexivo, sin emoji - VÁLIDO para posts heavy/serios)
+
+⚠️ CTAs reflexivas tipo "¿Te das cuenta?" o "¿Lo ves ahora?" son PERFECTAS para posts de revelación brutal. NO penalices por falta de emoji si el tono es serio/dramático.
 
 PROHIBIDO:
    ❌ NO "Descubre cómo..." (no es natural)
-   ❌ NO CTAs sin emoji (muy robótico)
    ❌ NO preguntas largas o complejas
 
 🎯 FORMATO "BLOQUES CON AIRE" (PESO ALTO - CRÍTICO PARA ENGAGEMENT):
@@ -441,14 +459,17 @@ PUNTUACIÓN EXIGENTE (difícil sacar 10):
    
    📌 CRITERIO: Solo si parece top 100 por impresiones. SÉ EXIGENTE.
    
-9/10: EXCELENTE - Muy cerca de viral
-   ✅ Hook potente (emocional, corto)
-   ✅ Aplica patrón viral reconocible (puede mejorar ejecución)
-   ✅ Contenido con datos + contraste
-   ✅ Insight final presente (puede ser más potente)
-   ✅ CTA correcta con emoji
-   ✅ Formato con aire (bloques separados)
-   ⚠️ Le falta "punch" para ser 10/10
+8-9/10: EXCELENTE - Muy cerca de viral
+   ✅ Hook potente (emocional, corto, MAYÚSCULAS selectivas)
+   ✅ Aplica patrón viral reconocible
+   ✅ Contenido con datos concretos + contraste brutal
+   ✅ Insight final presente (explícito O implícito en estructura)
+   ✅ CTA correcta (con o sin emoji según tono)
+   ✅ Formato con aire perfecto (bloques separados)
+   
+   📌 Posts tipo "revelación brutal" con contraste emocional fuerte + datos concretos + estructura que ES el insight → 8-9/10
+   
+   ⚠️ Le falta "punch" para ser 10/10 (factor WTF, viralidad masiva)
    
 7-8/10: BIEN - Estructura sólida
    ✅ Hook claro y directo (puede ser título/lista)
@@ -561,6 +582,29 @@ Realidad: [contraste brutal con datos]
 ✅ CTA pregunta corta
 → PUNTUACIÓN: 9-10/10
 
+Post revelación brutal (8-9/10):
+"La vida que nos enseñan es una ESTAFA
+
+📚 Estudias 22-25 años.
+🧳 Trabajas 40-45 años.
+🕊️ Eres "libre" 5-10 años.
+
+Con dolores y sin energía.
+
+☠️ Te mueres.
+
+¿Te das cuenta?"
+
+✅ Hook brutal ("ESTAFA")
+✅ Datos concretos (años específicos)
+✅ Contraste emocional brutal
+✅ Formato con aire perfecto
+✅ Lista visual con emojis
+✅ CTA reflexiva (válida sin emoji)
+✅ INSIGHT IMPLÍCITO (el post entero revela la estafa)
+⚠️ NO penalices por "falta de insight final" - el insight ES la estructura completa
+→ PUNTUACIÓN: 8-9/10 (NO 6/10)
+
 FORMATO DE RESPUESTA:
 
 📊 PUNTUACIÓN: X/10
@@ -577,10 +621,10 @@ FORMATO DE RESPUESTA:
 
 [Post completo reescrito, tal cual iría en X]
 [NO pongas numeritos (1. Hook, 2. Contenido...) - escribe el post ENTERO como quedaría]
+[NO uses separadores "—" entre contenido e insight]
 [Mantén el tema original, solo mejora estructura/formato]
 
-🎯 CLAVE:
-[Una línea con la mejora más importante]
+[FIN - No añadas "🎯 CLAVE:" ni nada más después de la reescritura]
 
 ESTRUCTURA DE REESCRITURA:
 
