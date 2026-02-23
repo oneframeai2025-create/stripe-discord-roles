@@ -850,23 +850,22 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
 💡 REESCRITURA (SOLO si <7/10):
 
-> [Post completo reescrito, tal cual iría en X]
+[Post completo reescrito, tal cual iría en X]
 
 INSTRUCCIONES:
-• USA ">" al inicio para crear quote en Discord (fácil de copiar en móvil)
-• Si el post tiene MÚLTIPLES LÍNEAS → pon ">" solo al inicio, Discord lo formatea automáticamente
-• NO pongas ">" en cada línea (rompe el formato)
-• USA saltos de línea normales dentro del quote
+• Escribe el post DIRECTO, sin quotes ni formato especial
+• Se enviará como mensaje separado para copiar fácil
+• Mantén saltos de línea y bloques con aire
 • Mantén el tema original, solo mejora estructura/formato
 
-⚠️⚠️⚠️ DESPUÉS DEL QUOTE NO ESCRIBAS ABSOLUTAMENTE NADA ⚠️⚠️⚠️
+⚠️⚠️⚠️ DESPUÉS DE LA REESCRITURA NO ESCRIBAS ABSOLUTAMENTE NADA ⚠️⚠️⚠️
 
 PROHIBIDO ABSOLUTAMENTE AÑADIR:
 ❌ NO "[FIN - SIN NADA MÁS]"
 ❌ NO "🎯 CLAVE:"
 ❌ NO "🎯 CLAVE FINAL:"
 ❌ NO explicaciones adicionales
-❌ NO NADA - el quote marca el fin
+❌ NO NADA - la reescritura marca el fin
 
 EJEMPLO CORRECTO:
 
@@ -879,15 +878,15 @@ EJEMPLO CORRECTO:
 
 💡 REESCRITURA:
 
-> NOS HAN ENGAÑADO con las tarjetas 🤯
-> 
-> Creías que los puntos eran gratis pero:
-> 
-> - Pagas 3% más en cada compra
-> - Los premios valen 40% menos
-> - Caducan en 12 meses
-> 
-> ¿Te das cuenta del negocio?
+NOS HAN ENGAÑADO con las tarjetas 🤯
+
+Creías que los puntos eran gratis pero:
+
+- Pagas 3% más en cada compra
+- Los premios valen 40% menos
+- Caducan en 12 meses
+
+¿Te das cuenta del negocio?
 
 (Ahí termina tu respuesta, sin añadir nada más)
 
@@ -921,7 +920,12 @@ RECORDATORIOS FINALES:
 ✅ Emojis casuales (🔥💡🤔😅) NO decorativos
 ✅ Si es hilo, ajusta criterios (máx 8/10 salvo hook brutal)`;
 
-export async function analyzePost(postContent: string): Promise<string> {
+export interface AnalysisResult {
+  analysis: string;
+  rewrite: string | null;
+}
+
+export async function analyzePost(postContent: string): Promise<AnalysisResult> {
   try {
     const response = await openai.chat.completions.create({
       model: 'gpt-4o', // Modelo más potente para análisis profundo
@@ -933,9 +937,29 @@ export async function analyzePost(postContent: string): Promise<string> {
       max_tokens: 1200, // Más tokens para análisis detallado
     });
 
-    return response.choices[0]?.message?.content || '❌ Error al analizar el post';
+    const fullResponse = response.choices[0]?.message?.content || '❌ Error al analizar el post';
+    
+    // Split by "💡 REESCRITURA:" to separate analysis from rewrite
+    const parts = fullResponse.split('💡 REESCRITURA:');
+    
+    if (parts.length === 2) {
+      // Has rewrite
+      return {
+        analysis: parts[0].trim(),
+        rewrite: parts[1].trim()
+      };
+    } else {
+      // No rewrite (score >= 7/10)
+      return {
+        analysis: fullResponse.trim(),
+        rewrite: null
+      };
+    }
   } catch (err) {
     console.error('Error calling OpenAI:', err);
-    return '❌ Error al analizar el post. Verifica la API key de OpenAI.';
+    return {
+      analysis: '❌ Error al analizar el post. Verifica la API key de OpenAI.',
+      rewrite: null
+    };
   }
 }

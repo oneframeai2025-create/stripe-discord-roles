@@ -42,10 +42,15 @@ export async function initDiscordBot(): Promise<void> {
       await message.channel.sendTyping();
 
       // Analyze the post
-      const analysis = await analyzePost(message.content);
+      const result = await analyzePost(message.content);
 
-      // Reply with analysis
-      await message.reply(analysis);
+      // Send analysis (message 1)
+      await message.reply(result.analysis);
+      
+      // If there's a rewrite, send it as a separate message (message 2)
+      if (result.rewrite) {
+        await message.channel.send(result.rewrite);
+      }
       
       console.log(`✅ Analysis sent to ${message.author.username}`);
     } catch (error) {
