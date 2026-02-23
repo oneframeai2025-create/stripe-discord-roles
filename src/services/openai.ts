@@ -850,24 +850,23 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
 💡 REESCRITURA (SOLO si <7/10):
 
-───────────────────────────────
+> [Post completo reescrito, tal cual iría en X]
 
-[Post completo reescrito, tal cual iría en X]
-[USA "- " al inicio de items de lista para mejor formato]
-[NO pongas numeritos (1. Hook, 2. Contenido...)]
-[NO uses separadores "—" innecesarios]
-[Mantén el tema original, solo mejora estructura/formato]
+INSTRUCCIONES:
+• USA ">" al inicio para crear quote en Discord (fácil de copiar en móvil)
+• Si el post tiene MÚLTIPLES LÍNEAS → pon ">" solo al inicio, Discord lo formatea automáticamente
+• NO pongas ">" en cada línea (rompe el formato)
+• USA saltos de línea normales dentro del quote
+• Mantén el tema original, solo mejora estructura/formato
 
-───────────────────────────────
-
-⚠️⚠️⚠️ DESPUÉS DE LA LÍNEA DE SEPARACIÓN NO ESCRIBAS ABSOLUTAMENTE NADA ⚠️⚠️⚠️
+⚠️⚠️⚠️ DESPUÉS DEL QUOTE NO ESCRIBAS ABSOLUTAMENTE NADA ⚠️⚠️⚠️
 
 PROHIBIDO ABSOLUTAMENTE AÑADIR:
 ❌ NO "[FIN - SIN NADA MÁS]"
 ❌ NO "🎯 CLAVE:"
 ❌ NO "🎯 CLAVE FINAL:"
 ❌ NO explicaciones adicionales
-❌ NO NADA - las líneas de separación marcan el fin
+❌ NO NADA - el quote marca el fin
 
 EJEMPLO CORRECTO:
 
@@ -880,11 +879,15 @@ EJEMPLO CORRECTO:
 
 💡 REESCRITURA:
 
-───────────────────────────────
-
-[post completo aquí]
-
-───────────────────────────────
+> NOS HAN ENGAÑADO con las tarjetas 🤯
+> 
+> Creías que los puntos eran gratis pero:
+> 
+> - Pagas 3% más en cada compra
+> - Los premios valen 40% menos
+> - Caducan en 12 meses
+> 
+> ¿Te das cuenta del negocio?
 
 (Ahí termina tu respuesta, sin añadir nada más)
 
@@ -893,20 +896,18 @@ ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 • HOOK (3-15 palabras, emocional, MAYÚSCULAS selectivas)
 • CONTENIDO con bloques separados:
   - Si son listas → usa "- " al inicio de cada línea para máximo aire
-  - Ejemplo formato perfecto:
-    "- ⌛ Item 1
-     - 🪖 Item 2
-     - 💵 Item 3"
+  - Usa saltos de línea entre bloques
   - Separación clara entre secciones
 • INSIGHT (explícito o implícito según el post)
 • CTA (pregunta corta, emoji opcional según tono)
 
 ⚠️ CRÍTICO EN LA RESPUESTA:
-1. Escribe el POST COMPLETO tal cual iría en X
-2. USA "- " al inicio de items de lista para formato con aire
-3. NO añadas NADA después de la reescritura
-4. NO pongas "🎯 CLAVE:" ni similares
-5. La reescritura es lo último, ahí termina tu respuesta
+1. Escribe TODO dentro del QUOTE (>) para que sea copiable en Discord móvil
+2. POST COMPLETO tal cual iría en X (SIN el ">", ese es solo para Discord)
+3. Mantén saltos de línea y formato (bloques con aire)
+4. NO añadas NADA después del quote
+5. NO pongas "🎯 CLAVE:" ni similares
+6. La reescritura es lo último, ahí termina tu respuesta
 
 APLICA EL PATRÓN, NO COPIES EJEMPLOS LITERALES
 
