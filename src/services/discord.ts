@@ -44,8 +44,15 @@ export async function initDiscordBot(): Promise<void> {
       // Analyze the post
       const result = await analyzePost(message.content);
 
+      // Prepare message 1
+      let message1 = result.analysis;
+      if (result.rewrite) {
+        // Add "💡 REESCRITURA:" at the end if there's a rewrite
+        message1 += '\n\n💡 REESCRITURA:';
+      }
+
       // Send analysis (message 1)
-      await message.reply(result.analysis);
+      await message.reply(message1);
       
       // If there's a rewrite, send it as a separate message (message 2)
       if (result.rewrite) {

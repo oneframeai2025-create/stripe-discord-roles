@@ -848,7 +848,9 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
 [Máximo 3-4 fallos. Sé específico y humano.]
 
-💡 REESCRITURA (SOLO si <7/10):
+[Si puntuación <7/10 → AÑADE "💡 REESCRITURA:" seguido del post reescrito]
+
+💡 REESCRITURA:
 
 [Post completo reescrito, tal cual iría en X]
 
@@ -867,7 +869,7 @@ PROHIBIDO ABSOLUTAMENTE AÑADIR:
 ❌ NO explicaciones adicionales
 ❌ NO NADA - la reescritura marca el fin
 
-EJEMPLO CORRECTO:
+EJEMPLO CORRECTO (post <7/10):
 
 📊 PUNTUACIÓN: 6/10
 
@@ -889,6 +891,16 @@ Creías que los puntos eran gratis pero:
 ¿Te das cuenta del negocio?
 
 (Ahí termina tu respuesta, sin añadir nada más)
+
+EJEMPLO CORRECTO (post ≥7/10):
+
+📊 PUNTUACIÓN: 8/10
+
+❌ QUÉ FALLA:
+
+• Hook podría ser más potente
+
+(Sin reescritura porque ya está bien)
 
 ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 
