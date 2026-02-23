@@ -4,7 +4,7 @@ import { analyzePost } from './openai';
 let discordClient: Client | null = null;
 
 const LABORATORIO_CHANNEL = 'laboratorio-de-ganchos';
-const ADMINS_CHANNEL = 'admins';
+const ADMINS_CHANNEL = 'chat-admins';
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
