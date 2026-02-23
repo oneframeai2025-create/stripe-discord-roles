@@ -48,7 +48,7 @@ export async function initDiscordBot(): Promise<void> {
       let message1 = result.analysis;
       if (result.rewrite) {
         // Add "💡 REESCRITURA:" at the end if there's a rewrite
-        message1 += '\n\n💡 REESCRITURA:';
+        message1 += '\n\n💡 REESCRITURA:\n';
       }
 
       // Send analysis (message 1)
