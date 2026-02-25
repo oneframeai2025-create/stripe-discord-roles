@@ -277,6 +277,21 @@ Te comen la inflación.
 • No hay separación entre ideas
 • Difícil de escanear visualmente
 
+⚠️⚠️⚠️ REGLA ABSOLUTA DE ESPACIADO ⚠️⚠️⚠️
+
+**SIN ESPACIADO ADECUADO → MÁXIMO 5/10 (independientemente del contenido)**
+
+Incluso si el mensaje es potente, datos brutales, hook perfecto:
+- Si está todo pegado sin saltos → NO puede superar 5/10
+- Si tiene bloques de 4+ líneas sin aire → NO puede superar 6/10
+
+**El espaciado NO ES OPCIONAL. Es CRÍTICO para engagement.**
+
+Fórmula penalización:
+- Muro completo (sin saltos) → 1-2/10 máximo
+- Bloques muy largos (4-6 líneas) → 4-5/10 máximo
+- Bloques largos (3-4 líneas) pero algunos saltos → 6/10 máximo
+
 ✅ BONIFICA si:
 • Bloques cortos bien separados (cada 2-3 líneas hay salto)
 • Ritmo visual claro (listas, emojis al inicio de línea)
@@ -556,7 +571,7 @@ Rompe expectativas → curiosidad
    "Ahorrar es importante" → 2/10 máximo
    
 ❌ Muro de texto sin aire
-   Párrafo denso, imposible escanear → 3/10 máximo
+   Párrafo denso, imposible escanear → 1-2/10 máximo (PENALIZACIÓN EXTREMA)
    
 ❌ Lenguaje corporativo/vendedor
    "Descubre cómo transformar tu vida financiera..." → 3/10
@@ -847,6 +862,11 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 • [Fallo 3]
 
 [Máximo 3-4 fallos. Sé específico y humano.]
+
+⚠️ **CRÍTICO:** Si hay problema de ESPACIADO (muro de texto, bloques muy largos):
+• SIEMPRE menciona "Sin espaciado / bloques muy largos / muro de texto" como primer fallo
+• SIEMPRE incluye reescritura mostrando cómo debería estar espaciado
+• Penalización automática según tabla: muro completo (1-2/10), bloques muy largos (4-5/10)
 
 [Si puntuación <7/10 → AÑADE "💡 REESCRITURA:" seguido del post reescrito]
 
