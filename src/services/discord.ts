@@ -185,21 +185,31 @@ export async function sendAdminNotification(message: string): Promise<void> {
   }
 
   try {
+    console.log(`🔍 Attempting to send notification to #${ADMINS_CHANNEL}...`);
+    
     const guild = await discordClient.guilds.fetch(process.env.DISCORD_GUILD_ID!);
     const channels = await guild.channels.fetch();
+    
+    console.log(`📋 Found ${channels.size} channels in guild`);
+    
+    // Log all text channels for debugging
+    const textChannels = channels.filter((ch) => ch?.type === 0);
+    console.log(`📝 Text channels: ${Array.from(textChannels.values()).map((ch) => ch?.name).join(', ')}`);
     
     const adminChannel = channels.find(
       (ch) => ch?.type === 0 && ch.name === ADMINS_CHANNEL
     );
 
     if (!adminChannel || adminChannel.type !== 0) {
-      console.warn(`Admin channel #${ADMINS_CHANNEL} not found`);
+      console.error(`❌ Admin channel #${ADMINS_CHANNEL} not found. Available text channels: ${Array.from(textChannels.values()).map((ch) => ch?.name).join(', ')}`);
       return;
     }
 
+    console.log(`✅ Found admin channel: ${adminChannel.name} (ID: ${adminChannel.id})`);
+    
     await adminChannel.send(message);
     console.log(`📢 Admin notification sent to #${ADMINS_CHANNEL}`);
   } catch (error) {
-    console.error('Error sending admin notification:', error);
+    console.error('❌ Error sending admin notification:', error);
   }
 }
