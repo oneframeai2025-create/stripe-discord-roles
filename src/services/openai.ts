@@ -714,10 +714,46 @@ Puntuación = CUÁNTAS señales + INTENSIDAD de cada una
 
 ⚠️ IMPORTANTE CRITERIOS ESPECIALES:
 
-📝 SI ES UN HILO (tweet 1/X):
-   • NO penalices por falta de CTA final (puede estar en último tweet)
-   • SÍ evalúa: hook del primer tweet, formato con aire, datos concretos
-   • Puntuación máxima: 8/10 (salvo que sea hook BRUTAL nivel 10/10)
+📝 DETECCIÓN DE HILOS:
+
+Un post es un HILO si:
+• Usuario especifica: "Contexto: este post es un hilo" o "Este es un hilo"
+• Termina en 👇 (señal de continuación)
+• Contiene "Hilo:" o "1/" o "[1/X]"
+• Promete contenido que sigue ("Te explico:", "Aquí van:", etc.)
+
+📝 SI ES UN HILO (primer tweet):
+
+**CRITERIOS ESPECÍFICOS:**
+
+✅ EVALÚA CON PESO ALTO:
+• Hook (60% del peso) - CRÍTICO: debe parar scroll brutal
+• Promesa clara de valor ("X maneras de...", "Te enseño...", "Domina...")
+• Formato con aire (bloques cortos)
+
+✅ CTA VÁLIDAS PARA HILOS:
+• "👇" (solo emoji)
+• "Sigue leyendo 👇"
+• "Aquí te explico 👇"
+• "Te cuento cómo: 👇"
+• Cualquier variación que invite a seguir leyendo
+
+⚠️ NO PENALICES:
+• Falta de pregunta final (los hilos NO necesitan pregunta)
+• Falta de "insight final" (el insight viene en el hilo completo)
+• CTA corta con solo 👇 (ES VÁLIDA Y PERFECTA)
+
+✅ BONIFICA:
+• Hook brutal que promete valor claro
+• Formato limpio, fácil escanear
+• Promesa específica (no genérica)
+
+📊 PUNTUACIÓN HILOS:
+• Hook brutal + promesa clara + 👇 → 8-10/10 (SÍ puede ser 10/10)
+• Hook bueno + formato aire + 👇 → 7-8/10
+• Hook débil o promesa genérica → 5-6/10
+
+**El primer tweet de un hilo bien ejecutado PUEDE sacar 9-10/10 si el hook es brutal.**
    
 🎯 LA MAYORÍA DE POSTS RONDAN 4-6/10:
    • Solo posts EXCEPCIONALES sacan 8+
@@ -823,6 +859,41 @@ Con dolores y sin energía.
 ⚠️ NO penalices por "falta de insight final" - el insight ES la estructura completa
 → PUNTUACIÓN: 8-9/10 (NO 6/10)
 
+Post primer tweet de hilo perfecto (9-10/10):
+"NO ENTIENDO POR QUÉ LA GENTE PAGA POR CURSOS EN 2026.
+
+GROK puede enseñarte cualquier cosa más rápido y GRATIS.
+
+Usa estos prompts y domina cualquier habilidad desde cero 👇"
+
+✅ Hook brutal ("NO ENTIENDO..." + MAYÚSCULAS + tema controversial)
+✅ Contraste claro (cursos de pago vs GROK gratis)
+✅ Promesa específica ("domina cualquier habilidad desde cero")
+✅ CTA perfecta para hilo (👇)
+✅ Formato con aire (bloques separados)
+✅ Patrón viral #7 (prompt a IA como gancho)
+⚠️ NO penalices por falta de pregunta - es un HILO, la CTA es 👇
+→ PUNTUACIÓN: 9-10/10 (hook brutal + ejecución perfecta)
+
+Post primer tweet de hilo bueno (8/10):
+"Formas de GANAR DINERO en 2026, sin estudios:
+
+De más fácil a menos:
+
+🤖 Plantillas de prompts de IA
+💸 UGC marcas
+🎬 Edición shorts
+
+Te explico CÓMO hacerlo: 👇"
+
+✅ Hook claro (lista práctica + "sin estudios")
+✅ Formato con aire perfecto
+✅ Lista visual con emojis
+✅ Promesa específica ("te explico CÓMO")
+✅ CTA perfecta para hilo (👇)
+⚠️ Hook podría ser más emocional/brutal
+→ PUNTUACIÓN: 8/10 (NO 6/10 por "falta CTA pregunta")
+
 Post dilema A/B perfecto (10/10):
 "Elige uno:
 
@@ -853,7 +924,14 @@ TRABAJO 🅱️
 
 FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
+⚠️ **PRIMER PASO:** Detecta si es un hilo
+- Lee el contexto del usuario: "este post es un hilo" o "Contexto: es un hilo"
+- O detecta señales: termina en 👇, contiene "Hilo:", promete contenido
+- Si ES un hilo → aplica criterios de hilo (NO penalices falta de pregunta, 👇 es CTA válida)
+
 📊 PUNTUACIÓN: X/10
+
+[Si es hilo, añade: "🧵 Detectado: Primer tweet de HILO"]
 
 ❌ QUÉ FALLA:
 
