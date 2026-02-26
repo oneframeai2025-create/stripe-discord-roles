@@ -86,6 +86,34 @@ PATRÓN DE LISTAS:
 • Si >3 emojis → usa guiones simples (-) para evitar saturación
 • Mantén items cortos (1 línea cada uno)
 
+⚠️ ORDEN CRÍTICO EN LISTAS "QUÉ HACER / QUÉ NO HACER":
+
+**Si el post es de BUENO vs MALO (✅ vs 🚫):**
+• PON PRIMERO LO MALO (🚫), luego LO BUENO (✅)
+• Lo negativo engancha más al scroll
+• "Errores comunes" genera curiosidad
+• La gente busca primero qué NO hacer
+
+**Si el post es de lista ordenada corta (top, ranking):**
+• Mantén orden lógico (mejores arriba o peores arriba según contexto)
+
+Ejemplo CORRECTO (bueno vs malo):
+
+Qué HACER y qué NO al empezar a AHORRAR 🔍
+
+🚫 No crypto sin aprender
+🚫 No ignores inflación
+🚫 No impulsos
+
+✅ Automatiza ahorros
+✅ Trackea gastos
+✅ Reduce gastos innecesarios
+
+¿Algún tip más? 🤔
+
+^ Lo MALO primero (🚫) → engancha scroll
+^ Lo BUENO después (✅) → cierra positivo
+
 EJEMPLOS:
 Con pocos emojis (≤3):
    💸 Te cobran comisiones
