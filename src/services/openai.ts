@@ -1093,6 +1093,20 @@ ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 → CREA UN HOOK NUEVO que sí sea emocional/brutal/contraste
 → **IMPORTANTE:** La info del hook original NO se pierde, se mueve al contenido abajo
 
+🚨 **NUNCA INVENTES DATOS - REGLA ABSOLUTA:**
+→ USA SOLO los datos/números/información que YA ESTÁN en el post original
+→ NO inventes cifras, edades, situaciones que el usuario no mencionó
+→ NO añadas contexto que no existe
+→ Hook potente = reordena/enfatiza datos REALES del post, no crea datos nuevos
+
+Ejemplo:
+Post original: "Tengo 28 años pagando alquiler con mi pareja. Gastos: 600€/mes"
+✅ Hook correcto: "28 años. 600€ al mes. Y siempre con la sensación de no llegar 😅"
+❌ Hook MAL: "28 años. 5.500€/mes. Y NUNCA es suficiente" (inventó el 5.500€)
+
+→ Si el post menciona ingresos/gastos → úsalos en el hook
+→ Si NO los menciona → NO los inventes
+
 Ejemplos de transformación:
 
 ❌ Original: "Tengo 25 años y trabajo desde casa como freelance"
