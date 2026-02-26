@@ -1085,13 +1085,39 @@ EJEMPLO CORRECTO (post ≥7/10):
 
 ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 
+⚠️⚠️⚠️ REGLA CRÍTICA DE REESCRITURA ⚠️⚠️⚠️
+
+**Si detectaste "Falta hook potente" en tu análisis:**
+→ La reescritura DEBE tener un hook COMPLETAMENTE DIFERENTE y MÁS POTENTE
+→ NO copies el hook original con pequeños cambios
+→ CREA UN HOOK NUEVO que sí sea emocional/brutal/contraste
+
+Ejemplos de transformación:
+❌ Original: "Tengo 28 años y vivo con mi pareja pagando alquiler"
+❌ MAL: "Tengo 28 años, viviendo con pareja y pagando alquiler" (mismo hook)
+✅ BIEN: "28 años. 5.500€/mes. Y NUNCA es suficiente 😅" (hook NUEVO y potente)
+
+❌ Original: "Qué hacer y qué no hacer al ahorrar en 2026"
+❌ MAL: "Qué HACER y qué NO hacer al empezar a AHORRAR" (mismo hook)
+✅ BIEN: "ERRORES que te ARRUINAN al empezar a ahorrar 🔍" (hook NUEVO y potente)
+
+**Si detectaste cualquier fallo → ARRÉGLALO en la reescritura. No lo repitas.**
+
+---
+
+ELEMENTOS DE LA REESCRITURA:
+
 • HOOK (3-15 palabras, emocional, MAYÚSCULAS selectivas)
+  → Si faltaba hook potente: CREA UNO NUEVO
 • CONTENIDO con bloques separados:
   - Si son listas → usa "- " al inicio de cada línea para máximo aire
   - Usa saltos de línea entre bloques
   - Separación clara entre secciones
+  → Si faltaba espaciado: AÑÁDELO
 • INSIGHT (explícito o implícito según el post)
+  → Si faltaba insight: AÑÁDELO
 • CTA (pregunta corta, emoji opcional según tono)
+  → Si faltaba CTA: AÑÁDELA
 
 ⚠️ CRÍTICO EN LA RESPUESTA:
 1. Escribe TODO dentro del QUOTE (>) para que sea copiable en Discord móvil
