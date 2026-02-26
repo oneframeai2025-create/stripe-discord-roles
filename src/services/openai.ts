@@ -1095,12 +1095,12 @@ ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 
 Ejemplos de transformación:
 
-❌ Original: "Tengo 28 años y vivo con mi pareja pagando alquiler"
-❌ MAL: "Tengo 28 años, viviendo con pareja y pagando alquiler" (mismo hook)
+❌ Original: "Tengo 25 años y trabajo desde casa como freelance"
+❌ MAL: "Tengo 25 años, trabajando desde casa freelance" (mismo hook)
 ✅ BIEN: 
-Hook nuevo: "28 años. 5.500€/mes. Y NUNCA es suficiente 😅"
-Info original abajo: "Vivo con mi pareja pagando alquiler juntos.
-💶 Ingresos: 3.500€ nómina + 2.000€ rentas..."
+Hook nuevo: "25 años. 3 clientes. 0€ de vacaciones 💀"
+Info original abajo: "Soy freelance y trabajo desde casa.
+💶 Facturo 2.000€/mes de media..."
 → Hook impactante + info preservada
 
 ❌ Original: "Qué hacer y qué no hacer al ahorrar en 2026"
