@@ -943,8 +943,7 @@ Con dolores y sin energía.
 ✅ Lista visual con emojis
 ✅ CTA reflexiva (válida sin emoji)
 ✅ INSIGHT IMPLÍCITO (el post entero revela la estafa)
-⚠️ NO penalices por "falta de insight final" - el insight ES la estructura completa
-→ PUNTUACIÓN: 8-9/10 (NO 6/10)
+→ PUNTUACIÓN: 8-9/10
 
 Post primer tweet de hilo perfecto (9-10/10):
 "NO ENTIENDO POR QUÉ LA GENTE PAGA POR CURSOS EN 2026.
@@ -959,7 +958,6 @@ Usa estos prompts y domina cualquier habilidad desde cero 👇"
 ✅ CTA perfecta para hilo (👇)
 ✅ Formato con aire (bloques separados)
 ✅ Patrón viral #7 (prompt a IA como gancho)
-⚠️ NO penalices por falta de pregunta - es un HILO, la CTA es 👇
 → PUNTUACIÓN: 9-10/10 (hook brutal + ejecución perfecta)
 
 Post primer tweet de hilo bueno (8/10):
@@ -1005,9 +1003,7 @@ TRABAJO 🅱️
 ✅ Emojis 🅰️🅱️ visuales
 ✅ CTA debate perfecta
 ✅ Patrón viral #2 ejecutado PERFECTO
-⚠️ NO necesita insight final - el objetivo ES generar debate
-⚠️ NO penalices por "falta insight" - posts tipo encuesta/dilema NO lo necesitan
-→ PUNTUACIÓN: 10/10 (NO 9/10)
+→ PUNTUACIÓN: 10/10
 
 FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
