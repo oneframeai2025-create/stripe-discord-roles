@@ -167,6 +167,65 @@ FUNCIONAN PEOR (pero no están "prohibidas"):
    ⚠️ Preguntas largas/complejas (menos engagement)
    ⚠️ Sin pregunta ni CTA (excepto posts muy cortos/minimalistas)
 
+🎯 POSTS PROMOCIONALES - CRITERIO ESPECIAL:
+
+⚠️ **DETECTA SI ES UNA PROMO/OFERTA:**
+
+Señales de post promocional:
+• Ofrece producto/servicio específico (cuenta bancaria, app, servicio)
+• Menciona precio/beneficio concreto ("50€ gratis", "cuenta gratis")
+• Indica escasez ("solo quedan X huecos", "hasta el día X")
+• Objetivo claro: conversión (no debate educativo)
+
+**SI ES UNA PROMO:**
+
+✅ CTAs de CONVERSIÓN son CORRECTAS y NECESARIAS:
+• "Comenta YO y te lo envío"
+• "Comenta YO y te los LLEVAS"
+• "Escribe YO y te paso el enlace"
+• "Déjame un YO y te cuento"
+
+✅ PUEDE tener pregunta retórica adicional ANTES del CTA ("¿Aún no tienes tu asiento?")
+✅ El CTA de conversión DEBE estar al final
+✅ NO penalices por "CTA de marketing" - ES LO CORRECTO para promos
+✅ NO necesitan insight final (objetivo es conversión, no revelación)
+
+**Evaluación posts promo:**
+• Hook claro + oferta concreta + escasez + CTA conversión → 8-10/10
+• Formato con aire + datos concretos → bonifica puntuación
+• Pregunta retórica + CTA conversión → estructura PERFECTA
+• NO penalices por "falta de insight" - no lo necesitan
+
+Ejemplo perfecto de promo:
+"Sabadell da GRATIS 50€ 🎅
+
+Pero solo quedan dos huecos.
+
+A cambio:
+- Cuenta online 100% gratis
+- Sin permanencia ni comisiones
+- Recibes 50€ en solo 5 días
+
+¿Aún no tienes tu asiento? 🤔
+
+Comenta YO y te los LLEVAS"
+
+✅ Hook: "Sabadell da GRATIS 50€"
+✅ Escasez: "solo quedan dos huecos"
+✅ Beneficios claros con lista
+✅ Pregunta retórica: "¿Aún no tienes tu asiento?"
+✅ CTA conversión: "Comenta YO y te los LLEVAS"
+→ PUNTUACIÓN: 8-9/10 (promo bien ejecutada)
+
+**SI NO ES PROMO (post educativo/debate):**
+• CTA debe generar debate ("¿Estoy exagerando?")
+• Sí penaliza CTAs de marketing genéricas
+• Criterios normales de CTA aplican
+
+📌 La clave: ¿El post VENDE algo o ENSEÑA algo?
+- Vende → CTA de conversión OK
+- Enseña → CTA de debate necesaria
+
 🎯 FORMATO "BLOQUES CON AIRE" (PESO ALTO - CRÍTICO PARA ENGAGEMENT):
 
 ✅ El texto debe RESPIRAR - nunca más de 2-3 líneas seguidas sin salto
