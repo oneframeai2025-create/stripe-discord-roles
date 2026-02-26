@@ -1091,15 +1091,29 @@ ESTRUCTURA DE REESCRITURA (solo para referencia interna - NO numeres en output):
 → La reescritura DEBE tener un hook COMPLETAMENTE DIFERENTE y MÁS POTENTE
 → NO copies el hook original con pequeños cambios
 → CREA UN HOOK NUEVO que sí sea emocional/brutal/contraste
+→ **IMPORTANTE:** La info del hook original NO se pierde, se mueve al contenido abajo
 
 Ejemplos de transformación:
+
 ❌ Original: "Tengo 28 años y vivo con mi pareja pagando alquiler"
 ❌ MAL: "Tengo 28 años, viviendo con pareja y pagando alquiler" (mismo hook)
-✅ BIEN: "28 años. 5.500€/mes. Y NUNCA es suficiente 😅" (hook NUEVO y potente)
+✅ BIEN: 
+Hook nuevo: "28 años. 5.500€/mes. Y NUNCA es suficiente 😅"
+Info original abajo: "Vivo con mi pareja pagando alquiler juntos.
+💶 Ingresos: 3.500€ nómina + 2.000€ rentas..."
+→ Hook impactante + info preservada
 
 ❌ Original: "Qué hacer y qué no hacer al ahorrar en 2026"
 ❌ MAL: "Qué HACER y qué NO hacer al empezar a AHORRAR" (mismo hook)
-✅ BIEN: "ERRORES que te ARRUINAN al empezar a ahorrar 🔍" (hook NUEVO y potente)
+✅ BIEN:
+Hook nuevo: "ERRORES que te ARRUINAN al empezar a ahorrar 🔍"
+Info original abajo: mantén las listas de qué hacer / qué no hacer
+→ Hook emocional + contenido completo
+
+**Regla general:**
+• Hook = impacto emocional (números chocantes, contraste, mayúsculas)
+• Contenido = información detallada (preserva datos del original)
+• NO pierdas info valiosa al cambiar el hook
 
 **Si detectaste cualquier fallo → ARRÉGLALO en la reescritura. No lo repitas.**
 
