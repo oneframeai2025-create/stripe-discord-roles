@@ -27,7 +27,7 @@ export async function initDiscordBot(): Promise<void> {
       if (message.author.bot) return;
 
       // Only respond in #laboratorio-de-ganchos
-      if (message.channel.type === 0 && message.channel.name !== LABORATORIO_CHANNEL) {
+      if (!message.guild || !('name' in message.channel) || message.channel.name !== LABORATORIO_CHANNEL) {
         return;
       }
 
