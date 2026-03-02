@@ -1056,7 +1056,7 @@ TRABAJO 🅱️
    🔥 Dilemas universales masivos (dinero vs tiempo, libertad vs seguridad)
    🔥 Polémicas generales (educación, sociedad, economía de la calle)
 
-**🔍 POSTS CON ALTO FACTOR CURIOSIDAD/VOYEURISMO:**
+**🔍 POSTS CON ALTO FACTOR CURIOSIDAD:**
 
 ⚠️ IMPORTANTE: Estos posts tienen ALTO potencial viral aunque no tengan hook brutal o insight final.
 
@@ -1064,7 +1064,7 @@ TRABAJO 🅱️
    
    ✅ **Ingresos extra mensuales** (desglose detallado en €)
    → Amplitud audiencia: 25-30/30 (tema universal - todo el mundo quiere ingresos extra)
-   → Shareability: 7-9/10 (factor curiosidad morbosa + inspiración)
+   → Shareability: 7-9/10 (factor curiosidad + inspiración)
    → Utilidad masiva: 12-15/15 (lista práctica que inspira a otros)
    
    ✅ **Gastos mensuales desglosados** (alquiler, comida, transporte, etc.)
@@ -1080,8 +1080,8 @@ TRABAJO 🅱️
    → Shareability: 7-9/10 (aplicable + curiosidad)
 
 **Por qué funcionan:**
-   • Factor voyeurismo financiero (a la gente le fascina ver números reales de otros)
-   • Curiosidad morbosa masiva ("¿cuánto gana/gasta X?")
+   • Factor curiosidad masiva (a la gente le fascina ver números reales de otros)
+   • Curiosidad natural ("¿cuánto gana/gasta X?")
    • Inspiración práctica ("yo también puedo hacer esto")
    • Comparación social ("¿estoy por encima o por debajo?")
    • No necesitan hook brutal - el contenido ES el gancho
