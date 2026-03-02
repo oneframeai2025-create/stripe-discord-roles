@@ -1,5 +1,6 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 import { analyzePost } from './openai';
+import { generateIdeasFromCSV } from './csv-analyzer';
 
 let discordClient: Client | null = null;
 
@@ -34,13 +35,44 @@ export async function initDiscordBot(): Promise<void> {
 
       const channelName = message.channel.name;
 
-      // Handle #analiza-tu-cuenta and #lluvia-de-ideas
-      if (channelName === ANALIZA_CUENTA_CHANNEL || channelName === LLUVIA_IDEAS_CHANNEL) {
+      // Handle #lluvia-de-ideas
+      if (channelName === LLUVIA_IDEAS_CHANNEL) {
         try {
+          // Check for CSV attachment
+          if (message.attachments.size > 0) {
+            const attachment = message.attachments.first();
+            if (attachment && (attachment.name?.endsWith('.csv') || attachment.contentType?.includes('csv'))) {
+              console.log(`📊 CSV detected in #lluvia-de-ideas from ${message.author.username}`);
+              
+              await message.channel.sendTyping();
+              
+              // Download CSV
+              const response = await fetch(attachment.url);
+              const csvContent = await response.text();
+              
+              // Generate ideas
+              const ideas = await generateIdeasFromCSV(csvContent);
+              
+              // Send ideas (split if too long)
+              if (ideas.length > 2000) {
+                const chunks = ideas.match(/[\s\S]{1,2000}/g) || [ideas];
+                await message.reply(chunks[0]);
+                for (let i = 1; i < chunks.length; i++) {
+                  await message.channel.send(chunks[i]);
+                }
+              } else {
+                await message.reply(ideas);
+              }
+              
+              console.log(`✅ Ideas generated for ${message.author.username}`);
+              return;
+            }
+          }
+          
+          // If no CSV, check for number (doubling functionality)
           const content = message.content.trim();
           const number = parseFloat(content);
           
-          // Check if it's a valid number
           if (!isNaN(number) && content !== '') {
             const doubled = number * 2;
             await message.reply(`${doubled}`);
@@ -48,7 +80,28 @@ export async function initDiscordBot(): Promise<void> {
           }
         } catch (err) {
           console.error(`Error in #${channelName}:`, err);
-          // Don't reply on error, just log it
+          try {
+            await message.reply('❌ Error procesando el archivo. Asegúrate de que sea un CSV válido.');
+          } catch (replyErr) {
+            console.error('Failed to send error message:', replyErr);
+          }
+        }
+        return;
+      }
+
+      // Handle #analiza-tu-cuenta (number doubling only)
+      if (channelName === ANALIZA_CUENTA_CHANNEL) {
+        try {
+          const content = message.content.trim();
+          const number = parseFloat(content);
+          
+          if (!isNaN(number) && content !== '') {
+            const doubled = number * 2;
+            await message.reply(`${doubled}`);
+            console.log(`✅ Doubled ${number} → ${doubled} in #${channelName}`);
+          }
+        } catch (err) {
+          console.error(`Error in #${channelName}:`, err);
         }
         return;
       }
