@@ -91,26 +91,55 @@ export async function analyzeAccountFromCSV(csvContent: string, userId: string):
       .slice(0, 20)
       .map(([word, count]) => ({ word, count }));
 
-    // Prepare data for deep analysis with GPT-4o
+    // Analyze by day of week
+    const byDay: Record<string, { count: number; totalER: number; tweets: TweetAnalysis[] }> = {};
+    tweets.forEach(t => {
+      if (!byDay[t.dayOfWeek]) {
+        byDay[t.dayOfWeek] = { count: 0, totalER: 0, tweets: [] };
+      }
+      byDay[t.dayOfWeek].count++;
+      byDay[t.dayOfWeek].totalER += t.engagementRate;
+      byDay[t.dayOfWeek].tweets.push(t);
+    });
+
+    const dayStats = Object.entries(byDay).map(([day, data]) => ({
+      day,
+      avgER: (data.totalER / data.count).toFixed(2),
+      count: data.count,
+    })).sort((a, b) => parseFloat(b.avgER) - parseFloat(a.avgER));
+
+    // Analyze by volume (tweets per day)
+    const tweetsByDate: Record<string, number> = {};
+    tweets.forEach(t => {
+      const dateKey = t.date.split('T')[0] || t.date.split(' ')[0];
+      tweetsByDate[dateKey] = (tweetsByDate[dateKey] || 0) + 1;
+    });
+
+    const volumeAnalysis = Object.values(tweetsByDate).reduce((acc, count) => {
+      const range = count <= 2 ? '1-2' : count <= 5 ? '3-5' : count <= 10 ? '6-10' : '10+';
+      if (!acc[range]) acc[range] = { count: 0, totalTweets: 0 };
+      acc[range].count++;
+      acc[range].totalTweets += count;
+      return acc;
+    }, {} as Record<string, { count: number; totalTweets: number }>);
+
+    // Prepare COMPACT data for deep analysis with GPT-4o
     const dataForAnalysis = {
       totalTweets: tweets.length,
       totalImpressions,
       totalEngagement,
       avgER: avgER.toFixed(2),
       uniqueDays,
-      topTweetsByER: topByER.slice(0, 5).map(t => ({
-        text: t.text.substring(0, 100),
-        impressions: t.impressions,
-        er: t.engagementRate.toFixed(2),
-      })),
-      keywords: topKeywords.slice(0, 20),
-      tweets: tweets.map(t => ({
+      dayStats: dayStats,
+      volumeAnalysis: volumeAnalysis,
+      topTweetsByER: topByER.slice(0, 10).map(t => ({
+        text: t.text.substring(0, 120),
         day: t.dayOfWeek,
-        text: t.text.substring(0, 150),
         impressions: t.impressions,
         engagement: t.engagement,
         er: t.engagementRate.toFixed(2),
       })),
+      keywords: topKeywords.slice(0, 20),
     };
 
     const prompt = `Eres un analista experto de datos de Twitter/X. Te voy a dar datos de una cuenta personal y necesito que hagas un análisis PROFUNDO y ACCIONABLE.
