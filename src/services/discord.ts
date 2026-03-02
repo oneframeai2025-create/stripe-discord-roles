@@ -5,6 +5,8 @@ let discordClient: Client | null = null;
 
 const LABORATORIO_CHANNEL = 'laboratorio-de-ganchos';
 const ADMINS_CHANNEL = 'chat-admins';
+const ANALIZA_CUENTA_CHANNEL = 'analiza-tu-cuenta';
+const LLUVIA_IDEAS_CHANNEL = 'lluvia-de-ideas';
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
@@ -20,14 +22,32 @@ export async function initDiscordBot(): Promise<void> {
     console.log(`Discord bot logged in as ${discordClient!.user!.tag}`);
   });
 
-  // Analyze posts in #laboratorio-de-ganchos
+  // Handle messages in multiple channels
   discordClient.on('messageCreate', async (message) => {
     try {
       // Ignore bot's own messages
       if (message.author.bot) return;
 
-      // Only respond in #laboratorio-de-ganchos
-      if (!message.guild || !('name' in message.channel) || message.channel.name !== LABORATORIO_CHANNEL) {
+      if (!message.guild || !('name' in message.channel)) return;
+
+      const channelName = message.channel.name;
+
+      // #analiza-tu-cuenta and #lluvia-de-ideas: double the number
+      if (channelName === ANALIZA_CUENTA_CHANNEL || channelName === LLUVIA_IDEAS_CHANNEL) {
+        const content = message.content.trim();
+        const number = parseFloat(content);
+        
+        // Check if it's a valid number
+        if (!isNaN(number) && content !== '') {
+          const doubled = number * 2;
+          await message.reply(`${doubled}`);
+          console.log(`✅ Doubled ${number} → ${doubled} in #${channelName}`);
+        }
+        return;
+      }
+
+      // Only analyze posts in #laboratorio-de-ganchos
+      if (channelName !== LABORATORIO_CHANNEL) {
         return;
       }
 
