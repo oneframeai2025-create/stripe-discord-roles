@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 import { analyzePost } from './openai';
 import { generateIdeasFromCSV } from './csv-analyzer';
+import { analyzeAccountFromCSV } from './account-analyzer';
 
 let discordClient: Client | null = null;
 
@@ -92,9 +93,41 @@ export async function initDiscordBot(): Promise<void> {
         return;
       }
 
-      // Handle #analiza-tu-cuenta (number doubling only)
+      // Handle #analiza-tu-cuenta
       if (channelName === ANALIZA_CUENTA_CHANNEL) {
         try {
+          // Check for CSV attachment
+          if (message.attachments.size > 0) {
+            const attachment = message.attachments.first();
+            if (attachment && (attachment.name?.endsWith('.csv') || attachment.contentType?.includes('csv'))) {
+              console.log(`📊 CSV detected in #analiza-tu-cuenta from ${message.author.username}`);
+              
+              await message.channel.sendTyping();
+              
+              // Download CSV
+              const response = await fetch(attachment.url);
+              const csvContent = await response.text();
+              
+              // Analyze account
+              const analysis = await analyzeAccountFromCSV(csvContent, message.author.id);
+              
+              // Send analysis (split if too long)
+              if (analysis.length > 2000) {
+                const chunks = analysis.match(/[\s\S]{1,2000}/g) || [analysis];
+                await message.reply(chunks[0]);
+                for (let i = 1; i < chunks.length; i++) {
+                  await message.channel.send(chunks[i]);
+                }
+              } else {
+                await message.reply(analysis);
+              }
+              
+              console.log(`✅ Account analysis sent for ${message.author.username}`);
+              return;
+            }
+          }
+          
+          // If no CSV, check for number (doubling functionality)
           const content = message.content.trim();
           const number = parseFloat(content);
           
@@ -102,9 +135,17 @@ export async function initDiscordBot(): Promise<void> {
             const doubled = number * 2;
             await message.reply(`${doubled}`);
             console.log(`✅ Doubled ${number} → ${doubled} in #${channelName}`);
+          } else if (content.length > 0) {
+            // Any other text: show instructions
+            await message.reply('📊 **Sube tu archivo CSV para analizar tu cuenta**\n\n**Dónde descargarlo:**\nX Premium → Estadísticas → Contenido → Descargar\n\n⚠️ **Solo disponible en PC**');
           }
         } catch (err) {
           console.error(`Error in #${channelName}:`, err);
+          try {
+            await message.reply('❌ Error procesando el archivo. Asegúrate de que sea un CSV válido.');
+          } catch (replyErr) {
+            console.error('Failed to send error message:', replyErr);
+          }
         }
         return;
       }
