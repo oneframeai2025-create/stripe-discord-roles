@@ -5,6 +5,8 @@ let discordClient: Client | null = null;
 
 const LABORATORIO_CHANNEL = 'laboratorio-de-ganchos';
 const ADMINS_CHANNEL = 'chat-admins';
+const ANALIZA_CUENTA_CHANNEL = 'analiza-tu-cuenta';
+const LLUVIA_IDEAS_CHANNEL = 'lluvia-de-ideas';
 
 export async function initDiscordBot(): Promise<void> {
   discordClient = new Client({
@@ -20,49 +22,84 @@ export async function initDiscordBot(): Promise<void> {
     console.log(`Discord bot logged in as ${discordClient!.user!.tag}`);
   });
 
-  // Analyze posts in #laboratorio-de-ganchos
+  // Handle all messages with global error catching
   discordClient.on('messageCreate', async (message) => {
     try {
       // Ignore bot's own messages
       if (message.author.bot) return;
 
-      // Only respond in #laboratorio-de-ganchos
-      if (!message.guild || !('name' in message.channel) || message.channel.name !== LABORATORIO_CHANNEL) {
+      // Ensure we have guild and channel name
+      if (!message.guild) return;
+      if (!('name' in message.channel)) return;
+
+      const channelName = message.channel.name;
+
+      // Handle #analiza-tu-cuenta and #lluvia-de-ideas
+      if (channelName === ANALIZA_CUENTA_CHANNEL || channelName === LLUVIA_IDEAS_CHANNEL) {
+        try {
+          const content = message.content.trim();
+          const number = parseFloat(content);
+          
+          // Check if it's a valid number
+          if (!isNaN(number) && content !== '') {
+            const doubled = number * 2;
+            await message.reply(`${doubled}`);
+            console.log(`✅ Doubled ${number} → ${doubled} in #${channelName}`);
+          }
+        } catch (err) {
+          console.error(`Error in #${channelName}:`, err);
+          // Don't reply on error, just log it
+        }
         return;
       }
 
-      // Ignore very short messages (< 10 chars)
-      if (message.content.length < 10) {
+      // Handle #laboratorio-de-ganchos
+      if (channelName === LABORATORIO_CHANNEL) {
+        // Ignore very short messages (< 10 chars)
+        if (message.content.length < 10) {
+          return;
+        }
+
+        try {
+          console.log(`📝 Analyzing post from ${message.author.username}: "${message.content.substring(0, 50)}..."`);
+
+          // Show typing indicator
+          await message.channel.sendTyping();
+
+          // Analyze the post
+          const result = await analyzePost(message.content);
+
+          // Prepare message 1
+          let message1 = result.analysis;
+          if (result.rewrite) {
+            // Add "💡 REESCRITURA:" at the end if there's a rewrite
+            message1 += '\n\n💡 REESCRITURA:\n';
+          }
+
+          // Send analysis (message 1)
+          await message.reply(message1);
+          
+          // If there's a rewrite, send it as a separate message (message 2)
+          if (result.rewrite) {
+            await message.channel.send(result.rewrite);
+          }
+          
+          console.log(`✅ Analysis sent to ${message.author.username}`);
+        } catch (error) {
+          console.error('Error analyzing post:', error);
+          try {
+            await message.reply('❌ Error al analizar el post. Verifica que las API keys de OpenAI estén configuradas.');
+          } catch (replyError) {
+            console.error('Failed to send error message:', replyError);
+          }
+        }
         return;
       }
 
-      console.log(`📝 Analyzing post from ${message.author.username}: "${message.content.substring(0, 50)}..."`);
-
-      // Show typing indicator
-      await message.channel.sendTyping();
-
-      // Analyze the post
-      const result = await analyzePost(message.content);
-
-      // Prepare message 1
-      let message1 = result.analysis;
-      if (result.rewrite) {
-        // Add "💡 REESCRITURA:" at the end if there's a rewrite
-        message1 += '\n\n💡 REESCRITURA:\n';
-      }
-
-      // Send analysis (message 1)
-      await message.reply(message1);
-      
-      // If there's a rewrite, send it as a separate message (message 2)
-      if (result.rewrite) {
-        await message.channel.send(result.rewrite);
-      }
-      
-      console.log(`✅ Analysis sent to ${message.author.username}`);
+      // Other channels: ignore
     } catch (error) {
-      console.error('Error handling message:', error);
-      await message.reply('❌ Error al analizar el post. Verifica que las API keys de OpenAI estén configuradas.');
+      // Global catch: never let errors kill the bot
+      console.error('Unhandled error in messageCreate:', error);
     }
   });
 
