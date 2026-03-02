@@ -77,6 +77,9 @@ export async function initDiscordBot(): Promise<void> {
             const doubled = number * 2;
             await message.reply(`${doubled}`);
             console.log(`✅ Doubled ${number} → ${doubled} in #${channelName}`);
+          } else if (content.length > 0) {
+            // Any other text: show instructions
+            await message.reply('📊 **Sube tu archivo CSV para generar ideas de contenido**\n\n**Dónde descargarlo:**\nX Premium → Estadísticas → Contenido → Descargar\n\n⚠️ **Solo disponible en PC**');
           }
         } catch (err) {
           console.error(`Error in #${channelName}:`, err);
