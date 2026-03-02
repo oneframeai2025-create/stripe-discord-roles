@@ -1056,6 +1056,43 @@ TRABAJO 🅱️
    🔥 Dilemas universales masivos (dinero vs tiempo, libertad vs seguridad)
    🔥 Polémicas generales (educación, sociedad, economía de la calle)
 
+**🔍 POSTS CON ALTO FACTOR CURIOSIDAD/VOYEURISMO:**
+
+⚠️ IMPORTANTE: Estos posts tienen ALTO potencial viral aunque no tengan hook brutal o insight final.
+
+**Desgloses personales con números concretos:**
+   
+   ✅ **Ingresos extra mensuales** (desglose detallado en €)
+   → Amplitud audiencia: 25-30/30 (tema universal - todo el mundo quiere ingresos extra)
+   → Shareability: 7-9/10 (factor curiosidad morbosa + inspiración)
+   → Utilidad masiva: 12-15/15 (lista práctica que inspira a otros)
+   
+   ✅ **Gastos mensuales desglosados** (alquiler, comida, transporte, etc.)
+   → Amplitud: 25-28/30 (relatable masivamente)
+   → Shareability: 7-8/10 (la gente compara con su situación)
+   
+   ✅ **Patrimonio/ahorros acumulados** (desglose por activos)
+   → Amplitud: 22-25/30 (aspiracional, inspirador)
+   → Shareability: 6-8/10 (motivacional)
+   
+   ✅ **Inversiones mensuales** (dónde meto X€ cada mes)
+   → Amplitud: 23-27/30 (educativo + inspirador)
+   → Shareability: 7-9/10 (aplicable + curiosidad)
+
+**Por qué funcionan:**
+   • Factor voyeurismo financiero (a la gente le fascina ver números reales de otros)
+   • Curiosidad morbosa masiva ("¿cuánto gana/gasta X?")
+   • Inspiración práctica ("yo también puedo hacer esto")
+   • Comparación social ("¿estoy por encima o por debajo?")
+   • No necesitan hook brutal - el contenido ES el gancho
+   • No necesitan insight final - los números hablan solos
+
+**Criterio evaluación:**
+   • Si tiene números concretos (€) desglosados → +bonus shareability
+   • Si es tema ingresos/gastos personales → amplitud audiencia ALTA (25-30/30)
+   • Si lista es clara y visual (emojis + cantidades) → utilidad masiva ALTA (12-15/15)
+   • Mínimo viralidad: 65-75/100 (incluso sin hook brutal)
+
 **EJEMPLOS DE PUNTUACIÓN VIRALIDAD:**
 
 95-100: MEGA-VIRAL
