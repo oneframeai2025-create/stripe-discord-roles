@@ -38,7 +38,7 @@ export async function analyzeAccountFromCSV(csvContent: string, userId: string):
     }
 
     // Extract and analyze tweets
-    const tweets: TweetAnalysis[] = mainTweets.map((row: any) => {
+    const allTweets: TweetAnalysis[] = mainTweets.map((row: any) => {
       const impressions = parseInt(row['Impresiones'] || row['impressions'] || row['Impressions'] || '0');
       const likes = parseInt(row['Me gusta'] || row['likes'] || row['Likes'] || '0');
       const retweets = parseInt(row['Retweets'] || row['retweets'] || '0');
@@ -62,6 +62,13 @@ export async function analyzeAccountFromCSV(csvContent: string, userId: string):
         engagementRate,
       };
     });
+
+    // Sort by impressions (descending) and take top 3000
+    const tweets = allTweets
+      .sort((a, b) => b.impressions - a.impressions)
+      .slice(0, 3000);
+
+    console.log(`📊 Account analysis: ${allTweets.length} total tweets → analyzing top ${tweets.length} by impressions`);
 
     // Calculate statistics
     const totalImpressions = tweets.reduce((sum, t) => sum + t.impressions, 0);
