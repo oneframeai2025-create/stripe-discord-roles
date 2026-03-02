@@ -1005,6 +1005,85 @@ TRABAJO 🅱️
 ✅ Patrón viral #2 ejecutado PERFECTO
 → PUNTUACIÓN: 10/10
 
+📈 EVALUACIÓN DE VIRALIDAD (0-100 puntos)
+
+⚠️ CRITERIO ANTI-NICHO: Penaliza DURO contenido ultra-específico
+
+**ESCALA DE VIRALIDAD:**
+
+**1. AMPLITUD DE AUDIENCIA (30pts)**
+   ✅ Tema universal (dinero, trabajo, injusticias, vida): +30pts
+   ✅ Listas comparativas masivas (provincias, súpers, precios): +25pts
+   ✅ Polémica/justicia social generalista: +25pts
+   ⚠️ Nicho amplio pero específico (tech, finanzas generales): +15pts
+   ❌ Ultra-nicho (acción X subió, cripto Y, producto Z específico): +5pts MAX
+
+**2. PROVOCACIÓN/POLARIZACIÓN (25pts)**
+   ✅ Rompe creencias comunes masivas: +25pts
+   ✅ Injusticia del sistema (bancos, impuestos, trabajo): +20pts
+   ✅ Dato chocante inesperado generalista: +18pts
+   ⚠️ Interesante pero no polariza: +10pts
+   ❌ Informativo sin ángulo: +3pts
+
+**3. UTILIDAD PRÁCTICA MASIVA (15pts)**
+   ✅ Aplicable HOY por miles de personas: +15pts
+   ✅ Lista datos/comparativas útiles: +12pts
+   ⚠️ Consejo genérico: +8pts
+   ❌ Solo útil para nicho específico: +3pts
+
+**4. SHAREABILITY (10pts)**
+   ✅ "Screenshot y compartir": +10pts
+   ✅ "Lo guardaría": +7pts
+   ⚠️ "Interesante": +4pts
+   ❌ Indiferente: +1pt
+
+**5. COPY/FORMATO (20pts)**
+   ✅ Hook brutal + formato aire + CTA perfecta: +20pts
+   ✅ Hook bueno + formato correcto: +15pts
+   ⚠️ Hook débil pero formato OK: +10pts
+   ❌ Sin hook o muro de texto: +5pts
+
+**PENALIZACIONES DURAS:**
+   🚫 Tema ultra-nicho (acción/cripto/producto específico): **-40pts**
+   🚫 Requiere conocimiento técnico previo: **-25pts**
+   🚫 Solo interesa a <1% población: **-30pts**
+   🚫 Ya visto mil veces sin ángulo nuevo: **-20pts**
+   🚫 Genérico sin datos concretos: **-15pts**
+
+**TEMAS QUE BONIFICAN (+20pts BONUS):**
+   🔥 Injusticias sistema (bancos te roban, impuestos absurdos, trabajo esclavo)
+   🔥 Listas comparativas virales (provincias españolas, cadenas súper, precios por ciudad)
+   🔥 Dilemas universales masivos (dinero vs tiempo, libertad vs seguridad)
+   🔥 Polémicas generales (educación, sociedad, economía de la calle)
+
+**EJEMPLOS DE PUNTUACIÓN VIRALIDAD:**
+
+95-100: MEGA-VIRAL
+• "El banco te ROBA y ni te enteras" (injusticia masiva + datos concretos)
+• "Ranking ahorro medio por provincia" (lista + datos + todo el mundo busca su provincia)
+
+70-85: ALTO POTENCIAL VIRAL
+• Dilemas A/B universales bien ejecutados
+• Hacks financieros aplicables por miles
+• Comparativas España vs mundo con datos
+
+50-69: POTENCIAL MEDIO
+• Temas interesantes pero sin polémica
+• Útil pero sin factor WTF
+• Copy bueno pero contenido genérico
+
+30-49: BAJO POTENCIAL
+• Nicho específico (solo fintech nerds)
+• Sin datos concretos impactantes
+• Ya visto mil veces
+
+0-29: ANTI-VIRAL
+• Ultra-nicho (acción Tesla subió 3%)
+• Requiere contexto técnico
+• Solo interesa a <1% población
+
+---
+
 FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 
 ⚠️ **PRIMER PASO:** Detecta si es un hilo
@@ -1012,9 +1091,19 @@ FORMATO DE RESPUESTA (sigue EXACTAMENTE este esquema):
 - O detecta señales: termina en 👇, contiene "Hilo:", promete contenido
 - Si ES un hilo → aplica criterios de hilo (NO penalices falta de pregunta, 👇 es CTA válida)
 
-📊 PUNTUACIÓN: X/10
+📊 COPY: X/10
+📈 VIRALIDAD: X/100
 
 [Si es hilo, añade: "🧵 Detectado: Primer tweet de HILO"]
+
+🎯 Desglose viralidad:
+• Amplitud audiencia: X/30 (explicación breve)
+• Provocación: X/25 (explicación breve)
+• Utilidad masiva: X/15 (explicación breve)
+• Shareability: X/10 (explicación breve)
+• Copy/formato: X/20 (explicación breve)
+[Si hay penalizaciones: • Penalización: -X (razón)]
+[Si hay bonus: • Bonus tema viral: +20 (razón)]
 
 ❌ QUÉ FALLA:
 
